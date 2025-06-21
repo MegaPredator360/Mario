@@ -8,7 +8,7 @@
 <import file="sounds.xml" />
 
 <!-- Fonts -->
-<font id="font_main" file="smb3_font.png" width="8" height="8" >
+<font id="font_main" file="graphics/smb3_font.png" width="8" height="8" >
 	<char id="A" x="0" y="0" number="5" />
 	<char id="G" x="40" y="0" number="15" />
 	<char id="V" x="0" y="8" number="5" />

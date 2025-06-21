@@ -66,7 +66,7 @@ void LoadingState::update()
 {
 	lastRenderTime = 0;
 	LOG.addListener(*this);
-	RESOURCE_MANAGER.loadResources("resources.xml");
+	RESOURCE_MANAGER.loadResources("../resources/resources.xml");
 	LOG.removeListener(*this);
 #if 0
 	getGame().switchState(new MapState);
