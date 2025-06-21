@@ -17,6 +17,18 @@ You will also need the following libraries:
 - boost
 - rapidxml
 
+# Compilar (automáticamente crea settings.ini si no existe)
+make
+
+# O generar settings.ini manualmente
+make generate-settings
+
+# O hacer setup completo
+make setup-game
+
+# Ejecutar el juego
+make run
+
 Resources
 ---------
 These are needed to run the game in it's current form.
