@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-#include <rapidxml.hpp>
+#include <rapidxml/rapidxml.hpp>
 
 class Animation;
 class Background;
