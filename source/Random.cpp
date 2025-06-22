@@ -184,9 +184,13 @@ int Random::nextInt()
 	return genrand_int31();
 }
 
-int Random::nextInt( int range )
-{
-	return nextInt() % range;
+int Random::nextInt(int range) {
+    if (range <= 0) {
+        // Log del error si hay sistema de logging disponible
+        // Logger::error("Random::nextInt called with invalid range: " + std::to_string(range));
+        return 0;
+    }
+    return nextInt() % range;
 }
 
 int Random::nextInt( int min, int max )
