@@ -1,4 +1,4 @@
-<?xml version=1.0?>
+<?xml version="1.0"?>
 <resources>
 
 <!-- Music -->
@@ -8,9 +8,9 @@
 <import file="sounds.xml" />
 
 <!-- Fonts -->
-<font id="font_main" file="graphics/smb3_font.png" width="8" height="8" >
-	<char id="A" x="0" y="0" number="5" />
-	<char id="G" x="40" y="0" number="15" />
+<font id="font_main" file="graphics/font/smb3_font.png" width="8" height="8" >
+	<char id="A" x="0" y="16" number="15" />
+	<char id="Q" x="0" y="24" number="9" />
 	<char id="V" x="0" y="8" number="5" />
 	<char id="a" x="40" y="8" number="15" />
 	<char id="p" x="0" y="16" number="11" />
@@ -21,20 +21,29 @@
 	<char id="?" x="152" y="16" />
 </font>
 
-<font id="font_bold" file="smb3_font.png" width="8" height="8" >
-	<char id="A" x="0" y="25" number="16" />
-	<char id="Q" x="0" y="33" number="10" />
-	<char id="a" x="0" y="25" number="16" />
-	<char id="q" x="0" y="33" number="10" />
-	<char id="0" x="0" y="41" number="10" />
+<font id="font_bold" file="graphics/font/smb3_font.png" width="8" height="8" >
+	<char id="A" x="0" y="16" number="16" />
+	<char id="Q" x="0" y="24" number="10" />
+	<char id="a" x="0" y="0" number="16" />
+	<char id="q" x="0" y="8" number="10" />
+	<char id="0" x="0" y="32" number="10" />
 	<char id="=" x="80" y="41" />
 </font>
 
-<!-- Animations -->
+<!-- Loading Tilesets -->
 <animation id="smb3_tiles">
-	<frame image="smb3_tiles.png" w="16" h="16" x_stride="1" y_stride="1" />
+	<frame image="graphics/smb3_tiles.png" w="16" h="16" x_stride="1" y_stride="1" />
 </animation>
 
+<animation id="smb3_grass_tiles">
+	<frame image="graphics/level_tiles/smb3_grass_tiles.png" w="16" h="16" x_stride="0" y_stride="0" />
+</animation>
+
+<animation id="smb3_common_tiles">
+	<frame image="graphics/level_tiles/smb3_common_tiles.png" w="16" h="16" x_stride="0" y_stride="0" />
+</animation>
+
+<!-- Animations -->
 <animation id="brick">
 	<frame animation="smb3_tiles" index="1d" time="10" />
 	<frame animation="smb3_tiles" index="1e" />
@@ -43,14 +52,14 @@
 </animation>
 
 <animation id="question_block">
-	<frame animation="smb3_tiles" index="0" time="10" />
-	<frame animation="smb3_tiles" index="1" />
-	<frame animation="smb3_tiles" index="2" />
-	<frame animation="smb3_tiles" index="3" />
+	<frame animation="smb3_common_tiles" index="0" time="10" />
+	<frame animation="smb3_common_tiles" index="1" />
+	<frame animation="smb3_common_tiles" index="2" />
+	<frame animation="smb3_common_tiles" index="3" />
 </animation>
 
 <animation id="block_dead">
-	<frame animation="smb3_tiles" index="76" />
+	<frame animation="smb3_common_tiles" index="4" />
 </animation>
 
 <animation id="wood_block">
@@ -69,7 +78,7 @@
 </animation>
 
 <animation id="coin">
-	<frame image="smb3_coin.png" w="6" h="16" time="8" />
+	<frame image="graphics/smb3_coin.png" w="6" h="16" time="8" />
 	<frame x="6" w="10" />
 	<frame x="16" w="14" />
 	<frame x="30" w="10" />
@@ -78,21 +87,21 @@
 <import file="mario.xml" />
 
 <animation id="goomba">
-	<frame image="smb3_enemies.png" x="15" y="4" w="16" h="16" time="8"/>
+	<frame image="graphics/smb3_enemies.png" x="15" y="4" w="16" h="16" time="8"/>
 	<frame x="65" y="4" />
 </animation>
 
 <animation id="goomba_dead">
-	<frame image="smb3_enemies.png" x="315" y="7" w="16" h="9" />
+	<frame image="graphics/smb3_enemies.png" x="315" y="7" w="16" h="9" />
 </animation>
 
 <animation id="koopa">
-	<frame image="smb3_enemies.png" x="125" y="98" w="16" h="27" time="8" />
+	<frame image="graphics/smb3_enemies.png" x="125" y="98" w="16" h="27" time="8" />
 	<frame x="165" y="99" h="26" />
 </animation>
 
 <animation id="shell">
-	<frame id="shell" image="smb3_enemies.png" x="50" y="104" w="16" h="16" />
+	<frame id="shell" image="graphics/smb3_enemies.png" x="50" y="104" w="16" h="16" />
 </animation>
 
 <animation id="shell_spinning">
@@ -103,86 +112,86 @@
 </animation>
 
 <animation id="smb3_plant_vertical">
-	<frame image="smb3_enemies.png" x="15" y="495" w="16" h="33" time="5" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="495" w="16" h="33" time="5" />
 	<frame x="65" />
 </animation>
 
 <animation id="smb3_plant_horizontal">
-	<frame image="smb3_enemies.png" x="211" y="654" w="24" h="16" time="5" />
+	<frame image="graphics/smb3_enemies.png" x="211" y="654" w="24" h="16" time="5" />
 	<frame x="260" />
 </animation>
 
 <animation id="smb3_bill_blaster">
-	<frame image="smb3_enemies.png" x="215" y="1145" w="16" h="33" />
+	<frame image="graphics/smb3_enemies.png" x="215" y="1145" w="16" h="33" />
 </animation>
 
 <animation id="smb3_bill_blaster_short">
-	<frame image="smb3_enemies.png" x="265" y="1153" w="16" h="17" />
+	<frame image="graphics/smb3_enemies.png" x="265" y="1153" w="16" h="17" />
 </animation>
 
 <animation id="smb3_bullet_bill">
-	<frame image="smb3_enemies.png" x="315" y="1155" w="16" h="14" />
+	<frame image="graphics/smb3_enemies.png" x="315" y="1155" w="16" h="14" />
 </animation>
 
 <animation id="smb3_buzzy_beetle">
-	<frame image="smb3_enemies.png" x="15" y="1004" w="16" h="16" time="8" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="1004" w="16" h="16" time="8" />
 	<frame x="65" />
 </animation>
 
 <animation id="smb3_buzzy_beetle_shell">
-	<frame image="smb3_enemies.png" x="215" y="1004" w="16" h="16" />
+	<frame image="graphics/smb3_enemies.png" x="215" y="1004" w="16" h="16" />
 </animation>
 
 <animation id="smb3_buzzy_beetle_shell_spinning">
-	<frame image="smb3_enemies.png" x="215" y="1004" w="16" h="16" time="2" />
+	<frame image="graphics/smb3_enemies.png" x="215" y="1004" w="16" h="16" time="2" />
 	<frame x="265" />
 	<frame x="365" />
 	<frame x="265" mirror_x="1" />
 </animation>
 
 <animation id="smb3_spiny">
-	<frame image="smb3_enemies.png" x="15" y="754" w="16" h="16" time="8" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="754" w="16" h="16" time="8" />
 	<frame x="65" y="753" />
 </animation>
 
 <animation id="smb3_lakitu">
-	<frame image="smb3_enemies.png" x="15" y="696" w="16" h="31" time="6" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="696" w="16" h="31" time="6" />
 	<frame x="65" />
 </animation>
 
 <animation id="smb3_lakitu_ducking">
-	<frame image="smb3_enemies.png" x="115" y="697" w="16" h="29" time="6" />
+	<frame image="graphics/smb3_enemies.png" x="115" y="697" w="16" h="29" time="6" />
 	<frame x="165" y="699" h="25" />
 	<frame x="215" y="700" h="24" />
 </animation>
 
 <animation id="smb3_lakitu_throwing">
-	<frame image="smb3_enemies.png" x="215" y="700" w="16" h="24" />
+	<frame image="graphics/smb3_enemies.png" x="215" y="700" w="16" h="24" />
 </animation>
 
 <animation id="smb3_spiny_egg">
-	<frame image="smb3_enemies.png" x="335" y="704" w="16" h="16" time="4" />
+	<frame image="graphics/smb3_enemies.png" x="335" y="704" w="16" h="16" time="4" />
 	<frame x="375" />
 </animation>
 
 <animation id="smb3_paratroopa">
-	<frame image="smb3_enemies.png" x="45" y="148" w="16" h="27" time="4" />
+	<frame image="graphics/smb3_enemies.png" x="45" y="148" w="16" h="27" time="4" />
 	<frame x="85" y="149" h="26" />
 	<frame x="125" y="148" h="28" />
 	<frame x="165" h="27" />
 </animation>
 
 <animation id="smb3_hammer_bro">
-	<frame image="smb3_enemies.png" x="65" y="850" w="16" h="24" time="10" />
+	<frame image="graphics/smb3_enemies.png" x="65" y="850" w="16" h="24" time="10" />
 	<frame x="115" />
 </animation>
 
 <animation id="smb3_hammer_bro_throw">
-	<frame image="smb3_enemies.png" x="15" y="850" w="16" h="24" time="20" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="850" w="16" h="24" time="20" />
 </animation>
 
 <animation id="smb3_hammer">
-	<frame image="smb3_enemies.png" x="375" y="840" w="16" h="16" time="4" />
+	<frame image="graphics/smb3_enemies.png" x="375" y="840" w="16" h="16" time="4" />
 	<frame x="353" y="840" />
 	<frame x="327" y="840" />
 	<frame x="305" y="840" />
@@ -193,42 +202,42 @@
 </animation>
 
 <animation id="smb3_muncher">
-	<frame image="smb3_enemies.png" x="15" y="1954" w="16" h="16" time="10" />
+	<frame image="graphics/smb3_enemies.png" x="15" y="1954" w="16" h="16" time="10" />
 	<frame x="65" />
 </animation>
 
 <animation id="mushroom">
-	<frame image="smb3_items.png" x="45" w="16" h="16" />
+	<frame image="graphics/smb3_items.png" x="45" w="16" h="16" />
 </animation>
 
 <animation id="flower">
-	<frame image="smb3_items.png" x="90" w="16" h="16" />
+	<frame image="graphics/smb3_items.png" x="90" w="16" h="16" />
 </animation>
 
 <animation id="fireball">
-	<frame image="smb3_enemies.png" x="114" y="657" w="8" h="8" time="4" />
+	<frame image="graphics/smb3_enemies.png" x="114" y="657" w="8" h="8" time="4" />
 	<frame x="134" y="658" />
 	<frame x="154" y="657" />
 	<frame x="174" y="658" />
 </animation>
 
 <animation id="star">
-	<frame image="smb3_items.png" x="270" w="16" h="16" time="4" />
+	<frame image="graphics/smb3_items.png" x="270" w="16" h="16" time="4" />
 	<frame x="315" />
 	<frame x="360" />
 	<frame x="405" />
 </animation>
 
 <animation id="leaf">
-	<frame image="smb3_items.png" x="135" w="15" h="16" />
+	<frame image="graphics/smb3_items.png" x="135" w="15" h="16" />
 </animation>
 
 <animation id="smb3_mushroom_1up">
-	<frame image="smb3_items.png" x="45" y="45" w="16" h="16" />
+	<frame image="graphics/level_tiles/smb3_items.png" x="144" w="16" h="16" />
 </animation>
 
 <animation id="bush">
-	<frame image="smb3_tiles.png" x="119" w="16" h="16" />
+	<frame image="graphics/smb3_tiles.png" x="119" w="16" h="16" />
 </animation>
 
 <animation id="smb3_vine">
@@ -239,30 +248,30 @@
 </animation>
 
 <animation id="smb3_plant_head">
-	<frame image="smb3_enemies.png" x="115" y="504" w="16" h="16" time="5" />
+	<frame image="graphics/smb3_enemies.png" x="115" y="504" w="16" h="16" time="5" />
 	<frame x="165" />
 </animation>
 
 <animation id="brick_particle">
-	<frame image="smb3_brick_particle.png" w="8" h="8" time="8" />
+	<frame image="graphics/smb3_brick_particle.png" w="8" h="8" time="8" />
 	<frame x="8" />
 </animation>
 
 <animation id="coin_particle">
-	<frame image="smb3_coin_particle.png" x="4" y="1" w="8" h="14" time="2" />
+	<frame image="graphics/smb3_coin_particle.png" x="4" y="1" w="8" h="14" time="2" />
 	<frame x="6" y="17" w="4" />
 	<frame x="8" y="33" w="1" />
 	<frame x="6" y="49" w="4" />
 </animation>
 
 <animation id="coin_explosion">
-	<frame image="smb3_coin_particle.png" y="64" w="16" h="16" time="6" />
+	<frame image="graphics/smb3_coin_particle.png" y="64" w="16" h="16" time="6" />
 	<frame y="80" />
 	<frame y="96" />
 </animation>
 
 <animation id="coin_sparkle">
-	<frame image="smb3_coin_sparkle.png" y="10" w="5" h="5" time="4" />
+	<frame image="graphics/smb3_coin_sparkle.png" y="10" w="5" h="5" time="4" />
 	<frame y="5" />
 	<frame y="0" />
 	<frame y="5" />
@@ -270,144 +279,144 @@
 </animation>
 
 <animation id="fireball_smoke">
-	<frame image="smb3_effects.png" y="43" w="16" h="16" time="4" />
+	<frame image="graphics/smb3_effects.png" y="43" w="16" h="16" time="4" />
 	<frame x="17" />
 	<frame x="34" />
 	<frame x="51" />
 </animation>
 
 <animation id="hit">
-	<frame image="smb3_effects.png" y="26" w="16" h="16" time ="4" />
+	<frame image="graphics/smb3_effects.png" y="26" w="16" h="16" time ="4" />
 	<frame x="17" />
 	<frame x="34" />
 	<frame x="51" />
 </animation>
 
 <animation id="slide_smoke">
-	<frame image="smb3_effects.png" y="17" w="7" h="8" time="4" />
+	<frame image="graphics/effects/smb3_effects.png" y="16" w="8" h="8" time="4" />
 	<frame x="8" />
 	<frame x="16" />
 	<frame x="24" />
 </animation>
 
 <animation id="level_end_block">
-	<frame image="smb3_items.png" w="16" h="16" />
+	<frame image="graphics/smb3_items.png" w="16" h="16" />
 </animation>
 
 <!-- HUD Animations -->
 <animation id="mario_indicator">
-	<frame image="smb3_hud.png" w="13" h="7" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="48" y="8" w="16" h="8" />
 </animation>
 
 <animation id="times">
-	<frame image="smb3_hud.png" x="13" w="8" h="7" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="80" w="8" h="8" />
 </animation>
 
 <animation id="time_indicator">
-	<frame image="smb3_hud.png" x="21" w="8" h="7" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="88" w="8" h="8" />
 </animation>
 
 <animation id="coin_indicator">
-	<frame image="smb3_hud.png" x="37" y="8" w="8" h="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="96" w="8" h="8" />
 </animation>
 
 <animation id="p_meter_bar_empty">
-	<frame image="smb3_hud.png" x="101" y="1" w="8" h="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" y="8" w="8" h="8" />
 </animation>
 
 <animation id="p_meter_bar_full">
-	<frame image="smb3_hud.png" x="101" y="9" w="8" h="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="8" y="8" w="8" h="8" />
 </animation>
 
 <animation id="p_meter_empty">
-	<frame image="smb3_hud.png" x="109" w="12" h="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" />
 </animation>
 
 <animation id="p_meter_full">
-	<frame image="smb3_hud.png" x="109" w="12" h="8" time="8" />
-	<frame image="smb3_hud.png" x="109" y="9" w="12" h="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" time="8" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="32" y="8" w="16" h="8" />
 </animation>
 
 <animation id="reserve_item_box">
-	<frame image="smw_reserve_item_box.png" w="28" h="28" />
+	<frame image="graphics/hud/smb3_status_bar.png" x="80" y="8" w="24" h="32" />
 </animation>
 
 <!-- Score animations -->
 <animation id="score_100">
-	<frame image="smb3_scores.png" x="1" w="11" h="8" />
+	<frame image="graphics/smb3_scores.png" x="1" w="11" h="8" />
 </animation>
 
 <animation id="score_200">
-	<frame image="smb3_scores.png" x="13" w="12" h="8" />
+	<frame image="graphics/smb3_scores.png" x="13" w="12" h="8" />
 </animation>
 
 <animation id="score_400">
-	<frame image="smb3_scores.png" x="26" w="12" h="8" />
+	<frame image="graphics/smb3_scores.png" x="26" w="12" h="8" />
 </animation>
 
 <animation id="score_800">
-	<frame image="smb3_scores.png" x="39" w="12" h="8" />
+	<frame image="graphics/smb3_scores.png" x="39" w="12" h="8" />
 </animation>
 
 <animation id="score_1000">
-	<frame image="smb3_scores.png" x="52" w="15" h="8" />
+	<frame image="graphics/smb3_scores.png" x="52" w="15" h="8" />
 </animation>
 
 <animation id="score_2000">
-	<frame image="smb3_scores.png" x="68" w="16" h="8" />
+	<frame image="graphics/smb3_scores.png" x="68" w="16" h="8" />
 </animation>
 
 <animation id="score_4000">
-	<frame image="smb3_scores.png" x="85" w="16" h="8" />
+	<frame image="graphics/smb3_scores.png" x="85" w="16" h="8" />
 </animation>
 
 <animation id="score_8000">
-	<frame image="smb3_scores.png" x="102" w="16" h="8" />
+	<frame image="graphics/smb3_scores.png" x="102" w="16" h="8" />
 </animation>
 
 <animation id="score_1up">
-	<frame image="smb3_scores.png" x="119" w="16" h="8" />
+	<frame image="graphics/smb3_scores.png" x="119" w="16" h="8" />
 </animation>
 
 <!-- Map movement animations -->
 <animation id="map_mario">
-	<frame image="smw_map_mario.png" x="16" y="9" w="12" h="15" />
+	<frame image="graphics/smw_map_mario.png" x="16" y="9" w="12" h="15" />
 </animation>
 
 <animation id="map_mario_climb">
-	<frame image="smw_map_mario.png" x="1" y="26" w="14" h="16" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="1" y="26" w="14" h="16" time="8" />
 	<frame x="16" />
 </animation>
 
 <animation id="map_mario_swim_down">
-	<frame image="smw_map_mario.png" x="31" y="26" w="14" h="12" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="31" y="26" w="14" h="12" time="8" />
 	<frame x="46" w="16" h="11" />
 </animation>
 
 <animation id="map_mario_swim_side">
-	<frame image="smw_map_mario.png" x="63" y="26" w="14" h="12" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="63" y="26" w="14" h="12" time="8" />
 	<frame x="78" w="16" h="11" />
 </animation>
 
 <animation id="map_mario_swim_up">
-	<frame image="smw_map_mario.png" x="95" y="26" w="14" h="12" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="95" y="26" w="14" h="12" time="8" />
 	<frame x="110" w="16" h="11" />
 </animation>
 
 <animation id="map_mario_walk_down">
-	<frame image="smw_map_mario.png" x="16" y="9" w="12" h="15" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="16" y="9" w="12" h="15" time="8" />
 	<frame x="1" w="14" />
 	<frame x="16" w="12" />
 	<frame x="29" w="14" />
 </animation>
 
 <animation id="map_mario_walk_side">
-	<frame image="smw_map_mario.png" x="44" y="9" w="15" h="16" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="44" y="9" w="15" h="16" time="8" />
 	<frame x="60" w="12" h="15" />
 </animation>
 
 <animation id="map_mario_walk_up">
-	<frame image="smw_map_mario.png" x="87" y="9" w="12" h="15" time="8" />
+	<frame image="graphics/smw_map_mario.png" x="87" y="9" w="12" h="15" time="8" />
 	<frame x="73" w="13" h="16" />
 	<frame x="87" w="12" h="15" />
 	<frame x="100" w="13" h="16" />
@@ -415,24 +424,24 @@
 
 <!-- Text things -->
 <animation id="mario_start_text">
-	<frame image="smw_text.png" w="105" h="16" />
+	<frame image="graphics/font/smw_start_text.png" w="112" h="16" />
 </animation>
 
 <animation id="luigi_start_text">
-	<frame image="smw_text.png" y="17" w="102" h="16" />
+	<frame image="graphics/font/smw_start_text.png" y="16" w="112" h="16" />
 </animation>
 
 <animation id="game_over_text">
-	<frame image="smw_text.png" y="34" w="80" h="16" />
+	<frame image="graphics/font/smw_start_text.png" y="48" w="112" h="16" />
 </animation>
 
 <animation id="time_up_text">
-	<frame image="smw_text.png" y="51" w="78" h="16" />
+	<frame image="graphics/font/smw_start_text.png" y="32" w="112" h="16" />
 </animation>
 
 <!-- Level icon animations -->
 <animation id="level_single_exit">
-	<frame image="smw_level_icons.png" w="16" h="16" time="10" />
+	<frame image="graphics/smw_level_icons.png" w="16" h="16" time="10" />
 	<frame y="17" />
 	<frame y="34" />
 	<frame y="51" />
@@ -441,7 +450,7 @@
 </animation>
 
 <animation id="level_multiple_exits">
-	<frame image="smw_level_icons.png" x="16" w="16" h="16" time="10" />
+	<frame image="graphics/smw_level_icons.png" x="16" w="16" h="16" time="10" />
 	<frame y="17" />
 	<frame y="34" />
 	<frame y="51" />
@@ -451,7 +460,7 @@
 
 <!-- Animations used to store tiles for the map -->
 <animation id="map_tiles">
-	<frame image="smw_map_tiles.png" w="8" h="8" x_stride="1" y_stride="1" />
+	<frame image="graphics/smw_map_tiles.png" w="8" h="8" x_stride="1" y_stride="1" />
 </animation>
 
 <!-- Animations used for tilesets -->
@@ -720,41 +729,41 @@
 
 <!-- Backgrounds -->
 <background id="blocks_bg" tiling="horizontal">
-	<frame image="smb3_bg/blocks.png" />
+	<frame image="graphics/backgrounds/smb3_blocks.png" />
 </background>
 
 <background id="dark_hills_bg" tiling="horizontal" time="10">
-	<frame image="smb3_bg/dark_hills_1.png" />
-	<frame image="smb3_bg/dark_hills_2.png" />
-	<frame image="smb3_bg/dark_hills_3.png" />
+	<frame image="graphics/backgrounds/smb3_night_hills_1.png" />
+	<frame image="graphics/backgrounds/smb3_night_hills_2.png" />
+	<frame image="graphics/backgrounds/smb3_night_hills_3.png" />
 	<frame index="1" />
 </background>
 
 <background id="hills_bg" tiling="horizontal">
-	<frame image="smb3_bg/hills.png" />
+	<frame image="graphics/backgrounds/smb3_hills.png" />
 </background>
 
 <background id="pipes_bg" tiling="all" time="10">
-	<frame image="smb3_bg/pipes_1.png" />
-	<frame image="smb3_bg/pipes_2.png" />
-	<frame image="smb3_bg/pipes_3.png" />
+	<frame image="graphics/backgrounds/smb3_pipes_1.png" />
+	<frame image="graphics/backgrounds/smb3_pipes_2.png" />
+	<frame image="graphics/backgrounds/smb3_pipes_3.png" />
 </background>
 
 <background id="smb3_ice_forest_bg" tiling="horizontal">
-	<frame image="smb3_bg/ice_forest.png" />
+	<frame image="graphics/backgrounds/smb3_snow_forest.png" />
 </background>
 
 <background id="smb3_underground_bg">
-	<frame image="smb3_bg/underground.png" />
+	<frame image="graphics/backgrounds/smb3_underground.png" />
 </background>
 
 <background id="smb3_ice_cave_bg" time="10">
-	<frame image="smb3_bg/ice_cave_1.png" />
-	<frame image="smb3_bg/ice_cave_2.png" />
-	<frame image="smb3_bg/ice_cave_3.png" />
-	<frame image="smb3_bg/ice_cave_4.png" />
-	<frame image="smb3_bg/ice_cave_5.png" />
-	<frame image="smb3_bg/ice_cave_6.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_1.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_2.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_3.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_4.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_5.png" />
+	<frame image="graphics/backgrounds/smb3_ice_cave_6.png" />
 </background>
 
 <!-- Resource groups -->
@@ -979,23 +988,23 @@
 
 <!-- Groups representing multi-tile level objects -->
 <group id="grass_tileset">
-	<resource key="tile_nw" animation="smb3_tiles" index="12" />
-	<resource key="tile_n" animation="smb3_tiles" index="13" />
-	<resource key="tile_ne" animation="smb3_tiles" index="14" />
-	<resource key="tile_w" animation="smb3_tiles" index="2f" />
-	<resource key="tile" animation="smb3_tiles" index="30" />
-	<resource key="tile_e" animation="smb3_tiles" index="31" />
-	<resource key="tile_sw" animation="smb3_tiles" index="4b" />
-	<resource key="tile_s" animation="smb3_tiles" index="4c" />
-	<resource key="tile_se" animation="smb3_tiles" index="4d" />
-	<resource key="tile_corner_nw" animation="smb3_tiles" index="11" />
-	<resource key="tile_corner_ne" animation="smb3_tiles" index="15" />
-	<resource key="tile_slope_up" animation="smb3_tiles" index="10" />
-	<resource key="tile_slope_down" animation="smb3_tiles" index="16" />
-	<resource key="tile_slope_up_left" animation="smb3_tiles" index="2d" />
-	<resource key="tile_slope_up_right" animation="smb3_tiles" index="2e" />
-	<resource key="tile_slope_down_left" animation="smb3_tiles" index="32" />
-	<resource key="tile_slope_down_right" animation="smb3_tiles" index="33" />
+	<resource key="tile_nw" animation="smb3_grass_tiles" index="0" />
+	<resource key="tile_n" animation="smb3_grass_tiles" index="1" />
+	<resource key="tile_ne" animation="smb3_grass_tiles" index="2" />
+	<resource key="tile_w" animation="smb3_grass_tiles" index="2f" />
+	<resource key="tile" animation="smb3_grass_tiles" index="30" />
+	<resource key="tile_e" animation="smb3_grass_tiles" index="31" />
+	<resource key="tile_sw" animation="smb3_grass_tiles" index="4b" />
+	<resource key="tile_s" animation="smb3_grass_tiles" index="4c" />
+	<resource key="tile_se" animation="smb3_grass_tiles" index="4d" />
+	<resource key="tile_corner_nw" animation="smb3_grass_tiles" index="11" />
+	<resource key="tile_corner_ne" animation="smb3_grass_tiles" index="15" />
+	<resource key="tile_slope_up" animation="smb3_grass_tiles" index="10" />
+	<resource key="tile_slope_down" animation="smb3_grass_tiles" index="16" />
+	<resource key="tile_slope_up_left" animation="smb3_grass_tiles" index="2d" />
+	<resource key="tile_slope_up_right" animation="smb3_grass_tiles" index="2e" />
+	<resource key="tile_slope_down_left" animation="smb3_grass_tiles" index="32" />
+	<resource key="tile_slope_down_right" animation="smb3_grass_tiles" index="33" />
 </group>
 
 <group id="dead_grass_tileset">
