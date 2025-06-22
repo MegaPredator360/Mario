@@ -1,18 +1,19 @@
 <?xml version="1.0"?>
 <resources>
-    <sound id="1up" file="sounds/smb3_1up.wav" />
+    <sound id="1up" file="sounds/smb3_extra_life.wav" />
     <sound id="blast" file="sounds/smb3_blast.wav" />
     <sound id="bump" file="sounds/smb3_bump.wav" />
     <sound id="brick_break" file="sounds/smb3_brick_break.wav" />
     <sound id="coin_get" file="sounds/smb3_coin.wav" />
     <sound id="count" file="sounds/smb3_count.wav" />
-    <sound id="hit_1" file="sounds/smb3_hit_1.wav" />
-    <sound id="hit_2" file="sounds/smb3_hit_2.wav" />
-    <sound id="hit_3" file="sounds/smb3_hit_3.wav" />
-    <sound id="hit_4" file="sounds/smb3_hit_4.wav" />
-    <sound id="hit_5" file="sounds/smb3_hit_5.wav" />
-    <sound id="hit_6" file="sounds/smb3_hit_6.wav" />
-    <sound id="hit_7" file="sounds/smb3_hit_7.wav" />
+    <sound id="hit_1" file="sounds/smb3_hit_combo_1.wav" />
+    <sound id="hit_2" file="sounds/smb3_hit_combo_2.wav" />
+    <sound id="hit_3" file="sounds/smb3_hit_combo_3.wav" />
+    <sound id="hit_4" file="sounds/smb3_hit_combo_4.wav" />
+    <sound id="hit_5" file="sounds/smb3_hit_combo_5.wav" />
+    <sound id="hit_6" file="sounds/smb3_hit_combo_6.wav" />
+    <sound id="hit_7" file="sounds/smb3_hit_combo_7.wav" />
+    <sound id="hit_8" file="sounds/smb3_hit_combo_8.wav" />
     <sound id="jump" file="sounds/smb3_jump.wav" />
     <sound id="kick" file="sounds/smb3_kick.wav" />
     <sound id="level_enter" file="sounds/smb3_level_enter.wav" />
@@ -23,7 +24,7 @@
     <sound id="reserve_item" file="sounds/smw_reserve_item.wav" />
     <sound id="reserve_item_drop" file="sounds/smw_reserve_item_drop.wav" />
     <sound id="spin" file="sounds/smb3_spin.wav" />
-    <sound id="sprout" file="sounds/smb3_sprout.wav" />
+    <sound id="sprout" file="sounds/smb3_block_item_appear.wav" />
     <sound id="stomp" file="sounds/smb3_stomp.wav" />
     <sound id="swim" file="sounds/smb3_swim.wav" />
     <sound id="throw" file="sounds/smb3_throw.wav" />
