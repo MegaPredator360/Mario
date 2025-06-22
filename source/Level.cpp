@@ -420,7 +420,12 @@ void Level::setTheme( const LevelTheme& theme, Random& random )
 {
 	// Set the background and the music
 	setBackground( theme.backgrounds[random.nextInt(theme.backgrounds.size())] );
-	setMusic( theme.musics[random.nextInt(theme.musics.size()) ] );
+
+	// Music loaded validation
+	if (!theme.musics.empty()) 
+	{
+    	setMusic( theme.musics[random.nextInt(theme.musics.size())] );
+	}
 
 	// Set the theme for sprites
 	for( auto& sprite : sprites )
