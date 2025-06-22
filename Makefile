@@ -3,7 +3,7 @@
 
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -std=c++11 -Wall -Wextra -g -O2
+CXXFLAGS = -std=c++11 -Wall -Wextra -g -O1 -fno-omit-frame-pointer
 
 # Directories
 SRCDIR = .
@@ -153,6 +153,37 @@ run: $(TARGET)
 	@echo "Running Mario..."
 	cd $(dir $(TARGET)) && ./$(notdir $(TARGET))
 
+# Run with debugger
+debug-run: debug
+	@echo "Running Mario with GDB..."
+	cd $(dir $(TARGET)) && gdb -ex run ./$(notdir $(TARGET))
+
+# Check resources before running
+check-resources:
+	@echo "Checking resources..."
+	@if [ ! -d "$(RESDIR)" ]; then \
+		echo "❌ Resources directory missing!"; \
+		echo "Run: make setup-resources"; \
+		exit 1; \
+	fi
+	@if [ ! -f "$(RESDIR)/resources.xml" ]; then \
+		echo "❌ resources.xml missing!"; \
+		echo "Please download resources from the Dropbox link"; \
+		exit 1; \
+	fi
+	@echo "✅ Resources directory found"
+	@echo "✅ resources.xml found"
+
+# Run with backtrace on crash
+run-bt: $(TARGET)
+	@echo "Running Mario with backtrace on crash..."
+	cd $(dir $(TARGET)) && gdb -batch -ex run -ex bt -ex quit ./$(notdir $(TARGET))
+
+# Safe run with resource checking
+safe-run: $(TARGET) check-resources
+	@echo "Running Mario (with resource check)..."
+	cd $(dir $(TARGET)) && ./$(notdir $(TARGET))
+
 # Debug build
 debug: CXXFLAGS += -DDEBUG -g3 -O0
 debug: $(TARGET)
@@ -176,17 +207,21 @@ help:
 	@echo "Mario Game Makefile"
 	@echo "==================="
 	@echo "Available targets:"
-	@echo "  all          - Build the game (default)"
-	@echo "  clean        - Remove build files"
-	@echo "  clean-all    - Remove build files and resources"
-	@echo "  run          - Build and run the game"
-	@echo "  debug        - Build debug version"
-	@echo "  release      - Build optimized release version"
-	@echo "  install-deps - Install required dependencies"
-	@echo "  setup-resources  - Create resources directory"
-	@echo "  generate-settings - Create default settings.ini in bin directory"
-	@echo "  setup-game       - Build game and generate settings"
-	@echo "  check-deps   - Check if dependencies are installed"
-	@echo "  help         - Show this help message"
+	@echo "  all          		- Build the game (default)"
+	@echo "  clean        		- Remove build files"
+	@echo "  clean-all    		- Remove build files and resources"
+	@echo "  run             	- Build and run the game"
+	@echo "  debug-run        	- Run game with GDB debugger"
+	@echo "  run-bt           	- Run game with backtrace on crash"
+	@echo "  safe-run         	- Run game with resource verification"
+	@echo "  check-resources  	- Verify resources are properly installed"
+	@echo "  debug        		- Build debug version"
+	@echo "  release      		- Build optimized release version"
+	@echo "  install-deps 		- Install required dependencies"
+	@echo "  setup-resources 	- Create resources directory"
+	@echo "  generate-settings 	- Create default settings.ini in bin directory"
+	@echo "  setup-game       	- Build game and generate settings"
+	@echo "  check-deps   		- Check if dependencies are installed"
+	@echo "  help         		- Show this help message"
 
-.PHONY: all clean clean-all run debug release install-deps setup-resources check-deps help generate-settings setup-game
+.PHONY: all clean clean-all run debug release install-deps setup-resources check-deps help generate-settings setup-game debug-run run-bt safe-run check-resources
