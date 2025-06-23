@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<resources>
+
+    <!-- Fonts -->
+    <font id="font_hud_counter" file="graphics/hud/smb3_status_bar.png" width="8" height="8" >
+        <char id="0" x="0" y="0" number="10" />
+    </font>
+
+    <!-- HUD Animations -->
+    <animation id="mario_indicator">
+        <frame image="graphics/hud/smb3_status_bar.png" x="48" y="8" w="16" h="8" />
+    </animation>
+
+    <animation id="times">
+        <frame image="graphics/hud/smb3_status_bar.png" x="80" w="8" h="8" />
+    </animation>
+
+    <animation id="time_indicator">
+        <frame image="graphics/hud/smb3_status_bar.png" x="88" w="8" h="8" />
+    </animation>
+
+    <animation id="coin_indicator">
+        <frame image="graphics/hud/smb3_status_bar.png" x="96" w="8" h="8" />
+    </animation>
+
+    <animation id="p_meter_bar_empty">
+        <frame image="graphics/hud/smb3_status_bar.png" y="8" w="8" h="8" />
+    </animation>
+
+    <animation id="p_meter_bar_full">
+        <frame image="graphics/hud/smb3_status_bar.png" x="8" y="8" w="8" h="8" />
+    </animation>
+
+    <animation id="p_meter_empty">
+        <frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" />
+    </animation>
+
+    <animation id="p_meter_full">
+        <frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" time="8" />
+        <frame image="graphics/hud/smb3_status_bar.png" x="32" y="8" w="16" h="8" />
+    </animation>
+
+    <animation id="reserve_item_box">
+        <frame image="graphics/hud/smb3_status_bar.png" x="80" y="8" w="24" h="32" />
+    </animation>
+
+    <!-- Score animations -->
+    <animation id="score_100">
+        <frame image="graphics/smb3_scores.png" x="1" w="11" h="8" />
+    </animation>
+
+    <animation id="score_200">
+        <frame image="graphics/smb3_scores.png" x="13" w="12" h="8" />
+    </animation>
+
+    <animation id="score_400">
+        <frame image="graphics/smb3_scores.png" x="26" w="12" h="8" />
+    </animation>
+
+    <animation id="score_800">
+        <frame image="graphics/smb3_scores.png" x="39" w="12" h="8" />
+    </animation>
+
+    <animation id="score_1000">
+        <frame image="graphics/smb3_scores.png" x="52" w="15" h="8" />
+    </animation>
+
+    <animation id="score_2000">
+        <frame image="graphics/smb3_scores.png" x="68" w="16" h="8" />
+    </animation>
+
+    <animation id="score_4000">
+        <frame image="graphics/smb3_scores.png" x="85" w="16" h="8" />
+    </animation>
+
+    <animation id="score_8000">
+        <frame image="graphics/smb3_scores.png" x="102" w="16" h="8" />
+    </animation>
+
+    <animation id="score_1up">
+        <frame image="graphics/hud/scores.png" x="0" w="16" h="8" />
+    </animation>
+</resources>

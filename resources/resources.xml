@@ -7,6 +7,9 @@
 <!-- Sounds -->
 <import file="sounds.xml" />
 
+<!-- HUD Elements -->
+<import file="hud_elements.xml" />
+
 <!-- Fonts -->
 <font id="font_main" file="graphics/font/smb3_font.png" width="8" height="8" >
 	<char id="A" x="0" y="16" number="15" />
@@ -301,81 +304,6 @@
 
 <animation id="level_end_block">
 	<frame image="graphics/smb3_items.png" w="16" h="16" />
-</animation>
-
-<!-- HUD Animations -->
-<animation id="mario_indicator">
-	<frame image="graphics/hud/smb3_status_bar.png" x="48" y="8" w="16" h="8" />
-</animation>
-
-<animation id="times">
-	<frame image="graphics/hud/smb3_status_bar.png" x="80" w="8" h="8" />
-</animation>
-
-<animation id="time_indicator">
-	<frame image="graphics/hud/smb3_status_bar.png" x="88" w="8" h="8" />
-</animation>
-
-<animation id="coin_indicator">
-	<frame image="graphics/hud/smb3_status_bar.png" x="96" w="8" h="8" />
-</animation>
-
-<animation id="p_meter_bar_empty">
-	<frame image="graphics/hud/smb3_status_bar.png" y="8" w="8" h="8" />
-</animation>
-
-<animation id="p_meter_bar_full">
-	<frame image="graphics/hud/smb3_status_bar.png" x="8" y="8" w="8" h="8" />
-</animation>
-
-<animation id="p_meter_empty">
-	<frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" />
-</animation>
-
-<animation id="p_meter_full">
-	<frame image="graphics/hud/smb3_status_bar.png" x="16" y="8" w="16" h="8" time="8" />
-	<frame image="graphics/hud/smb3_status_bar.png" x="32" y="8" w="16" h="8" />
-</animation>
-
-<animation id="reserve_item_box">
-	<frame image="graphics/hud/smb3_status_bar.png" x="80" y="8" w="24" h="32" />
-</animation>
-
-<!-- Score animations -->
-<animation id="score_100">
-	<frame image="graphics/smb3_scores.png" x="1" w="11" h="8" />
-</animation>
-
-<animation id="score_200">
-	<frame image="graphics/smb3_scores.png" x="13" w="12" h="8" />
-</animation>
-
-<animation id="score_400">
-	<frame image="graphics/smb3_scores.png" x="26" w="12" h="8" />
-</animation>
-
-<animation id="score_800">
-	<frame image="graphics/smb3_scores.png" x="39" w="12" h="8" />
-</animation>
-
-<animation id="score_1000">
-	<frame image="graphics/smb3_scores.png" x="52" w="15" h="8" />
-</animation>
-
-<animation id="score_2000">
-	<frame image="graphics/smb3_scores.png" x="68" w="16" h="8" />
-</animation>
-
-<animation id="score_4000">
-	<frame image="graphics/smb3_scores.png" x="85" w="16" h="8" />
-</animation>
-
-<animation id="score_8000">
-	<frame image="graphics/smb3_scores.png" x="102" w="16" h="8" />
-</animation>
-
-<animation id="score_1up">
-	<frame image="graphics/smb3_scores.png" x="119" w="16" h="8" />
 </animation>
 
 <!-- Map movement animations -->
@@ -810,6 +738,7 @@
 	
 	<!-- Fonts -->
 	<resource key="font_main" value="font_main" />
+	<resource key="font_hud_counter" value="font_hud_counter" />
 	<resource key="font_bold" value="font_bold" />
 	
 	<!-- Animations -->
