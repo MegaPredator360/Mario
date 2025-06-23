@@ -1,7 +1,7 @@
 #include "Coin.hpp"
-#include "Globals.hpp"
-#include "Particle.hpp"
-#include "World.hpp"
+#include "../Globals.hpp"
+#include "../Particle.hpp"
+#include "../World.hpp"
 
 Coin::Coin() :
 	Item( POINT_VALUE )

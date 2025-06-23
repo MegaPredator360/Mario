@@ -1,7 +1,7 @@
 #ifndef COIN_HPP
 #define COIN_HPP
 
-#include "Item.hpp"
+#include "../Item.hpp"
 
 /**
  * A collectible coin.

@@ -1,7 +1,7 @@
 #ifndef FLOWER_HPP
 #define FLOWER_HPP
 
-#include "Item.hpp"
+#include "../Item.hpp"
 
 /**
  * A fire flower.
