@@ -1,7 +1,7 @@
 #ifndef BLASTER_HPP
 #define BLASTER_HPP
 
-#include "Tile.hpp"
+#include "../Tile.hpp"
 
 /**
  * A launcher for Bullet objects.

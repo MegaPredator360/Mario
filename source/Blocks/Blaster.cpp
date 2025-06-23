@@ -1,9 +1,9 @@
 #include "Blaster.hpp"
-#include "Bullet.hpp"
-#include "Particle.hpp"
-#include "Player.hpp"
-#include "Random.hpp"
-#include "World.hpp"
+#include "../Enemies/Bullet.hpp"
+#include "../Particle.hpp"
+#include "../Player.hpp"
+#include "../Random.hpp"
+#include "../World.hpp"
 
 Blaster::Blaster() :
 	Tile(TILE_SOLID),

@@ -1,7 +1,7 @@
 #ifndef LADDER_HPP
 #define LADDER_HPP
 
-#include "Tile.hpp"
+#include "../Tile.hpp"
 
 /**
  * A climbable tile.
