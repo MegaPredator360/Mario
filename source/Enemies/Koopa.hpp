@@ -1,7 +1,7 @@
 #ifndef KOOPA_HPP
 #define KOOPA_HPP
 
-#include "Enemy.hpp"
+#include "../Enemy.hpp"
 
 /**
  * A turtle-like enemy with a kickable shell.

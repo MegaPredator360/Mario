@@ -1,8 +1,8 @@
-#include "Block.hpp"
+#include "../Block.hpp"
 #include "HammerBro.hpp"
-#include "Player.hpp"
-#include "Random.hpp"
-#include "World.hpp"
+#include "../Player.hpp"
+#include "../Random.hpp"
+#include "../World.hpp"
 
 /**
  * A hammer thrown by a hammer bro.

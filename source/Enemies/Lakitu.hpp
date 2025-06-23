@@ -1,7 +1,7 @@
 #ifndef LAKITU_HPP
 #define LAKITU_HPP
 
-#include "Enemy.hpp"
+#include "../Enemy.hpp"
 
 /**
  * A cloud-riding enemy that throws spinies at the player.

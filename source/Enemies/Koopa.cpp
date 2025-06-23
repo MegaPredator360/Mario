@@ -1,7 +1,7 @@
-#include "Globals.hpp"
+#include "../Globals.hpp"
 #include "Koopa.hpp"
 #include "Shell.hpp"
-#include "World.hpp"
+#include "../World.hpp"
 
 Koopa::Koopa()
 {

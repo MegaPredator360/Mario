@@ -1,7 +1,7 @@
 #ifndef BEETLE_HPP
 #define BEETLE_HPP
 
-#include "Enemy.hpp"
+#include "../Enemy.hpp"
 
 /**
  * A fireproof version of the Koopa.

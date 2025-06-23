@@ -250,27 +250,27 @@ void MainState::render()
 	const Animation* pMeterEmpty = GET_ANIMATION("p_meter_empty");
 	const Animation* pMeterFull = GET_ANIMATION("p_meter_full");
 	const Animation* reserveItemBox = GET_ANIMATION("reserve_item_box");
-	const BitmapFont* font = GET_FONT("font_bold");
+	const BitmapFont* fontHud = GET_FONT("font_hud_counter");
 
 	glEnable(GL_TEXTURE_2D);
 	RESOURCE_MANAGER.bindTextureAtlas();
 	glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
 
 	// Lives indicator
-	glTranslatef(font->getCharacterWidth(), SETTINGS.getRenderedScreenHeight() - font->getCharacterHeight() * 2.0, 0.0f);
+	glTranslatef(fontHud->getCharacterWidth(), SETTINGS.getRenderedScreenHeight() - fontHud->getCharacterHeight() * 2.0, 0.0f);
 	Animation::Frame frame = marioIndicator->getFrame(world->getFrameNumber());
 	marioIndicator->renderFrame(frame);
-	glTranslatef(frame.width * UNIT_SIZE + font->getCharacterWidth(), 0.0f, 0.0f);
+	glTranslatef(frame.width * UNIT_SIZE + fontHud->getCharacterWidth(), 0.0f, 0.0f);
 	frame = times->getFrame(world->getFrameNumber());
 	times->renderFrame(frame);
 	glTranslatef(frame.width * UNIT_SIZE, 0.0f, 0.0f);
 	char tempString[128];
 	sprintf(tempString, " %d", player->getLives());
-	font->renderText(tempString);
+	fontHud->renderText(tempString);
 
 	// P meter
 	glLoadIdentity();
-	glTranslatef(font->getCharacterWidth(), SETTINGS.getRenderedScreenHeight() - font->getCharacterHeight() * 3.0 - 1.0, 0.0f);
+	glTranslatef(fontHud->getCharacterWidth(), SETTINGS.getRenderedScreenHeight() - fontHud->getCharacterHeight() * 3.0 - 1.0, 0.0f);
 	for( int i = 0; i < Player::P_METER_FULL_BARS; i++ )
 	{
 		if( i == Player::P_METER_FULL_BARS - 1 )
@@ -321,22 +321,22 @@ void MainState::render()
 	{
 		glLoadIdentity();
 		glTranslatef(
-			SETTINGS.getRenderedScreenWidth() - font->getCharacterWidth() * 13.0,
-			SETTINGS.getRenderedScreenHeight() - font->getCharacterHeight() * 2.0,
+			SETTINGS.getRenderedScreenWidth() - fontHud->getCharacterWidth() * 13.0,
+			SETTINGS.getRenderedScreenHeight() - fontHud->getCharacterHeight() * 2.0,
 			0.0f
 		);
 		frame = timeIndicator->getFrame(world->getFrameNumber());
 		timeIndicator->renderFrame(frame);
 		glTranslatef(frame.width * UNIT_SIZE, 0.0f, 0.0f);
 		sprintf(tempString, "%d", world->getTime());
-		font->renderText(tempString);
+		fontHud->renderText(tempString);
 	}
 
 	// Coins and score
 	glLoadIdentity();
 	glTranslatef(
-		SETTINGS.getRenderedScreenWidth() - font->getCharacterWidth() * 6.0,
-		SETTINGS.getRenderedScreenHeight() - font->getCharacterHeight() * 2.0,
+		SETTINGS.getRenderedScreenWidth() - fontHud->getCharacterWidth() * 6.0,
+		SETTINGS.getRenderedScreenHeight() - fontHud->getCharacterHeight() * 2.0,
 		0.0f);
 	frame = coinIndicator->getFrame(world->getFrameNumber());
 	coinIndicator->renderFrame(frame);
@@ -345,26 +345,26 @@ void MainState::render()
 	times->renderFrame(frame);
 	glTranslatef(frame.width * UNIT_SIZE, 0.0f, 0.0f);
 	sprintf(tempString, " %2d", player->getCoins());
-	font->renderText(tempString);
+	fontHud->renderText(tempString);
 	glLoadIdentity();
 	glTranslatef(
-		SETTINGS.getRenderedScreenWidth() - font->getCharacterWidth() * 11.0,
-		SETTINGS.getRenderedScreenHeight() - font->getCharacterHeight() * 3.0 - 1.0,
+		SETTINGS.getRenderedScreenWidth() - fontHud->getCharacterWidth() * 11.0,
+		SETTINGS.getRenderedScreenHeight() - fontHud->getCharacterHeight() * 3.0 - 1.0,
 		0.0f);
 	sprintf(tempString, "%10d", player->getScore());
-	font->renderText(tempString);
+	fontHud->renderText(tempString);
 
 	// Stuff for if we finish a level
 	if( world->getStatus().statusType == WORLD_LEVEL_ENDED )
 	{
 		glLoadIdentity();
 		glTranslatef(
-			SETTINGS.getRenderedScreenWidth() / 2.0 - font->getCharacterWidth() * 6.0,
-			SETTINGS.getRenderedScreenHeight() / 2.0 + font->getCharacterHeight() * 3.0,
+			SETTINGS.getRenderedScreenWidth() / 2.0 - fontHud->getCharacterWidth() * 6.0,
+			SETTINGS.getRenderedScreenHeight() / 2.0 + fontHud->getCharacterHeight() * 3.0,
 			1.0f
 		);
-		font->renderText("Level Cleared");
-		glTranslatef( 0.0f, -2.0 * font->getCharacterHeight(), 0.0f);
+		fontHud->renderText("Level Cleared");
+		glTranslatef( 0.0f, -2.0 * fontHud->getCharacterHeight(), 0.0f);
 
 		if( world->getTime() != INFINITE_LEVEL_TIME && initialEndTimer - endTimer > 60 )
 		{
@@ -374,15 +374,15 @@ void MainState::render()
 
 
 			sprintf(tempString, "%d ", remainingTime);
-			font->renderText(tempString);
-			glTranslatef( strlen(tempString) * font->getCharacterWidth(), 0.0f, 0.0f);
+			fontHud->renderText(tempString);
+			glTranslatef( strlen(tempString) * fontHud->getCharacterWidth(), 0.0f, 0.0f);
 
 			frame = times->getFrame(world->getFrameNumber());
 			times->renderFrame(frame);
 			glTranslatef(frame.width * UNIT_SIZE, 0.0f, 0.0f);
 
 			sprintf(tempString, " 50 = %d", remainingTime * 50);
-			font->renderText(tempString);
+			fontHud->renderText(tempString);
 		}
 	}
 

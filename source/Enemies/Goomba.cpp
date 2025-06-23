@@ -1,7 +1,7 @@
-#include "Globals.hpp"
+#include "../Globals.hpp"
 #include "Goomba.hpp"
-#include "Particle.hpp"
-#include "World.hpp"
+#include "../Particle.hpp"
+#include "../World.hpp"
 
 Goomba::Goomba()
 {

@@ -61,7 +61,9 @@ void InfinityState::generateNewLevel()
 	Level* level = generator.generateLevel(random.nextInt());
 	while( true )
 	{
-		const LevelTheme& theme = *themes[random.nextInt(themes.size())];
+		// Seleccion de temas
+		//const LevelTheme& theme = *themes[random.nextInt(themes.size())];
+		const LevelTheme& theme = *themes[2];
 		if( !level->isThemeCompatible(theme) )
 		{
 			continue;

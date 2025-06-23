@@ -1,9 +1,9 @@
 #include "Lakitu.hpp"
-#include "Particle.hpp"
-#include "Player.hpp"
-#include "Random.hpp"
+#include "../Particle.hpp"
+#include "../Player.hpp"
+#include "../Random.hpp"
 #include "Spiny.hpp"
-#include "World.hpp"
+#include "../World.hpp"
 
 /**
  * An egg that spawns a spiny upon impacting the ground.

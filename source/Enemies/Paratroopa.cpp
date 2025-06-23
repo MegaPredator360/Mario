@@ -1,6 +1,6 @@
 #include "Koopa.hpp"
 #include "Paratroopa.hpp"
-#include "World.hpp"
+#include "../World.hpp"
 
 Paratroopa::Paratroopa()
 {
