@@ -1,7 +1,7 @@
 #ifndef PLANT_HPP
 #define PLANT_HPP
 
-#include "Enemy.hpp"
+#include "../Enemy.hpp"
 
 /**
  * Plants that come out of pipes.
