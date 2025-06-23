@@ -1,4 +1,4 @@
-#include "Animation.hpp"
+#include "../Animation.hpp"
 #include "Background.hpp"
 
 Background::Background( const Texture& texture, Animation* animation, BackgroundTiling tiling ) :

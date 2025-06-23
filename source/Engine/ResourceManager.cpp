@@ -2,16 +2,16 @@
 
 #include <rapidxml/rapidxml_utils.hpp>
 
-#include "Animation.hpp"
-#include "Background.hpp"
-#include "BitmapFont.hpp"
-#include "Exception.hpp"
-#include "Globals.hpp"
-#include "Image.hpp"
-#include "LevelTheme.hpp"
-#include "Music.hpp"
+#include "../GameFeatures/Animation.hpp"
+#include "../GameFeatures/Level/Background.hpp"
+#include "../Utils/BitmapFont.hpp"
+#include "../Utils/Exception.hpp"
+#include "../Utils/Globals.hpp"
+#include "../Utils/Image.hpp"
+#include "../GameFeatures/Level/LevelTheme.hpp"
+#include "../GameFeatures/Music.hpp"
 #include "ResourceManager.hpp"
-#include "Sound.hpp"
+#include "../GameFeatures/Sound.hpp"
 #include "Texture.hpp"
 
 using namespace rapidxml;

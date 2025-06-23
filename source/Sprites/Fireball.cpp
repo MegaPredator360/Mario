@@ -1,13 +1,13 @@
 #include <cmath>
 
-#include "DamageBlock.hpp"
-#include "Enemy.hpp"
+#include "../Blocks/DamageBlock.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 #include "Fireball.hpp"
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Particle.hpp"
-#include "Player.hpp"
-#include "Tile.hpp"
-#include "World.hpp"
+#include "../GameFeatures/Level/Player.hpp"
+#include "../Engine/Tile.hpp"
+#include "../GameFeatures/World.hpp"
 
 Fireball::Fireball(Player* player, double xVelocity) :
 	player(player)

@@ -1,7 +1,7 @@
 #ifndef MAINSTATE_HPP
 #define MAINSTATE_HPP
 
-#include "GameState.hpp"
+#include "../Engine/GameState.hpp"
 
 class DeadPlayer;
 class Player;

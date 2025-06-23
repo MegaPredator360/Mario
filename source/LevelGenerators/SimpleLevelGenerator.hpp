@@ -1,7 +1,7 @@
 #ifndef SIMPLELEVELGENERATOR_HPP
 #define SIMPLELEVELGENERATOR_HPP
 
-#include "../LevelGenerator.hpp"
+#include "../Utils/LevelGenerator.hpp"
 
 /**
  * Generates simple levels with flat ground.

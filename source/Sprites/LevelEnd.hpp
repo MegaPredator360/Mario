@@ -1,7 +1,7 @@
 #ifndef LEVELEND_HPP
 #define LEVELEND_HPP
 
-#include "Sprite.hpp"
+#include "../GameFeatures/Sprite.hpp"
 
 /**
  * A sprite that causes a level to end when the player collides with it.

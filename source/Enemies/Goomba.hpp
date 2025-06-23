@@ -1,7 +1,7 @@
 #ifndef GOOMBA_HPP
 #define GOOMBA_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 /**
  * A simple enemy.

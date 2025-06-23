@@ -3,12 +3,12 @@
 
 #include <GL/gl.h>
 
-#include "Animation.hpp"
-#include "Globals.hpp"
-#include "Math.hpp"
+#include "../Animation.hpp"
+#include "../../Utils/Globals.hpp"
+#include "../../Utils/Math.hpp"
 #include "Map.hpp"
-#include "Rendering.hpp"
-#include "Text.hpp"
+#include "../../Engine/Rendering.hpp"
+#include "../../Utils/Text.hpp"
 
 static const int FRAMES_PER_EVENT_FRAME = 12;
 

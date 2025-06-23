@@ -1,5 +1,5 @@
 #include "Item.hpp"
-#include "Globals.hpp"
+#include "../../Utils/Globals.hpp"
 
 Item::Item( int pointValue ) :
 	pointValue(pointValue)

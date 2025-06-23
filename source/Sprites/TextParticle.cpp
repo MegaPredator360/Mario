@@ -1,4 +1,4 @@
-#include "Text.hpp"
+#include "../Utils/Text.hpp"
 #include "TextParticle.hpp"
 
 TextParticle::TextParticle( const std::string& text, double duration ) :

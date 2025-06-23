@@ -1,7 +1,7 @@
 #ifndef PARTICLE_HPP
 #define PARTICLE_HPP
 
-#include "Sprite.hpp"
+#include "../GameFeatures/Sprite.hpp"
 
 /**
  * An animated effect sprite.

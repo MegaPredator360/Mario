@@ -1,7 +1,7 @@
 #ifndef SMBLEVELLOADER_HPP
 #define SMBLEVELLOADER_HPP
 
-#include "../LevelGenerator.hpp"
+#include "../Utils/LevelGenerator.hpp"
 
 /**
  * Loads levels from the original SMB.

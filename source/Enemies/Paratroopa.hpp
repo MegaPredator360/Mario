@@ -1,7 +1,7 @@
 #ifndef PARATROOPA_HPP
 #define PARATROOPA_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 /**
  * A flying koopa.

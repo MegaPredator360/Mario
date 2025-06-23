@@ -1,21 +1,21 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 
-#include "BitmapFont.hpp"
+#include "../Utils/BitmapFont.hpp"
 #include "Episode.hpp"
-#include "Game.hpp"
-#include "Globals.hpp"
+#include "../Engine/Game.hpp"
+#include "../Utils/Globals.hpp"
 #include "InfinityState.hpp"
-#include "Player.hpp"
-#include "Rendering.hpp"
-#include "TransitionState.hpp"
+#include "Level/Player.hpp"
+#include "../Engine/Rendering.hpp"
+#include "../Engine/TransitionState.hpp"
 #include "World.hpp"
 
 // Level Generators
-#include "LevelTheme.hpp"
-#include "LevelGenerators/HillyLevelGenerator.hpp"
-#include "LevelGenerators/SimpleLevelGenerator.hpp"
-#include "LevelGenerators/TestLevelGenerator.hpp"
+#include "Level/LevelTheme.hpp"
+#include "../LevelGenerators/HillyLevelGenerator.hpp"
+#include "../LevelGenerators/SimpleLevelGenerator.hpp"
+#include "../LevelGenerators/TestLevelGenerator.hpp"
 
 static const int BG_COLOR_CYCLE_FRAMES = 720; /**< The number of frames in a complete cycle of the background colors that are rendered. */
 

@@ -1,10 +1,10 @@
-#include "../Enemy.hpp"
-#include "../Globals.hpp"
-#include "../Particle.hpp"
-#include "../Player.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
+#include "../Utils/Globals.hpp"
+#include "../Sprites/Particle.hpp"
+#include "../GameFeatures/Level/Player.hpp"
 #include "Shell.hpp"
-#include "../Sound.hpp"
-#include "../World.hpp"
+#include "../GameFeatures/Sound.hpp"
+#include "../GameFeatures/World.hpp"
 
 Shell::Shell(bool fireproof) :
 	kickTimer(0),

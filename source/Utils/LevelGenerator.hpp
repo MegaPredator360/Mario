@@ -2,7 +2,7 @@
 #define LEVELGENERATOR_HPP
 
 // These are included for convenience
-#include "Level.hpp"
+#include "../GameFeatures/Level/Level.hpp"
 #include "Random.hpp"
 
 class LevelTheme;

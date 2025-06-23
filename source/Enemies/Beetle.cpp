@@ -1,7 +1,7 @@
 #include "Beetle.hpp"
-#include "../Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Shell.hpp"
-#include "../World.hpp"
+#include "../GameFeatures/World.hpp"
 
 Beetle::Beetle()
 {

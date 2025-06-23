@@ -1,7 +1,7 @@
-#include "Episode.hpp"
+#include "../GameFeatures/Episode.hpp"
 #include "GameSession.hpp"
-#include "Player.hpp"
-#include "World.hpp"
+#include "../GameFeatures/Level/Player.hpp"
+#include "../GameFeatures/World.hpp"
 
 GameSession::~GameSession()
 {

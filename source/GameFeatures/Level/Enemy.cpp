@@ -1,8 +1,8 @@
 #include "Enemy.hpp"
-#include "Particle.hpp"
-#include "Shell.hpp"
-#include "Tile.hpp"
-#include "World.hpp"
+#include "../../Sprites/Particle.hpp"
+#include "../../Enemies/Shell.hpp"
+#include "../../Engine/Tile.hpp"
+#include "../World.hpp"
 
 Enemy::Enemy() :
 	bounceOffEnemiesEnabled(true),

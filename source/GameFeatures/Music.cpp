@@ -1,4 +1,4 @@
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Music.hpp"
 
 Music::Music(const std::string& fileName)

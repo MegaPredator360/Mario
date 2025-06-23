@@ -3,9 +3,9 @@
 
 #include <list>
 
-#include "Enums.hpp"
-#include "Entity.hpp"
-#include "Vector2.hpp"
+#include "../Engine/Enums.hpp"
+#include "../Engine/Entity.hpp"
+#include "../Utils/Vector2.hpp"
 
 class Player;
 class Tile;

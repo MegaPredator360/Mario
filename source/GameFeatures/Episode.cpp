@@ -1,7 +1,7 @@
 #include "Episode.hpp"
-#include "Exception.hpp"
-#include "Globals.hpp"
-#include "Level.hpp"
+#include "../Utils/Exception.hpp"
+#include "../Utils/Globals.hpp"
+#include "Level/Level.hpp"
 
 Episode::~Episode()
 {

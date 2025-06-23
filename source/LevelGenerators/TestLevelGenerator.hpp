@@ -1,7 +1,7 @@
 #ifndef TESTLEVELGENERATOR_HPP
 #define TESTLEVELGENERATOR_HPP
 
-#include "../LevelGenerator.hpp"
+#include "../Utils/LevelGenerator.hpp"
 
 /**
  * Generates a test Level.

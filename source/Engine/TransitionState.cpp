@@ -1,11 +1,11 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 
-#include "Animation.hpp"
+#include "../GameFeatures/Animation.hpp"
 #include "Game.hpp"
-#include "Globals.hpp"
-#include "MainState.hpp"
-#include "Math.hpp"
+#include "../Utils/Globals.hpp"
+#include "../Utils/MainState.hpp"
+#include "../Utils/Math.hpp"
 #include "Rendering.hpp"
 #include "TransitionState.hpp"
 

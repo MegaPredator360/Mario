@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "EntityTypes.hpp"
+#include "../../Engine/EntityTypes.hpp"
 
 class Background;
 class Music;

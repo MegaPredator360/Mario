@@ -7,8 +7,8 @@
 #include <vector>
 
 #include "Animation.hpp"
-#include "Enums.hpp"
-#include "Vector2.hpp"
+#include "../Engine/Enums.hpp"
+#include "../Utils/Vector2.hpp"
 
 class Background;
 class Entity;

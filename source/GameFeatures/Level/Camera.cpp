@@ -1,6 +1,6 @@
 #include "Camera.hpp"
-#include "Globals.hpp"
-#include "Math.hpp"
+#include "../../Utils/Globals.hpp"
+#include "../../Utils/Math.hpp"
 
 const Vector2<double>& Camera::getPosition() const
 {

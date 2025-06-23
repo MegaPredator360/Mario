@@ -1,9 +1,9 @@
 #ifndef BLOCK_HPP
 #define BLOCK_HPP
 
-#include "Particle.hpp"
-#include "Sprite.hpp"
-#include "Tile.hpp"
+#include "../../Sprites/Particle.hpp"
+#include "../Sprite.hpp"
+#include "../../Engine/Tile.hpp"
 
 class Player;
 class Sound;

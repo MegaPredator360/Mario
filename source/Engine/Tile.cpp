@@ -1,6 +1,6 @@
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Tile.hpp"
-#include "World.hpp"
+#include "../GameFeatures/World.hpp"
 
 Tile::Tile(TileCollisionBehavior type, bool tilesetEnabled) :
 	x(0),

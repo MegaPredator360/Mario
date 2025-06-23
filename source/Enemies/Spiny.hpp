@@ -1,7 +1,7 @@
 #ifndef SPINY_HPP
 #define SPINY_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 /**
  * A spiky enemy that cannot be jumped on.

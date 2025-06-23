@@ -4,8 +4,8 @@
 #include <list>
 #include <vector>
 
-#include "Enums.hpp"
-#include "Types.hpp"
+#include "../../Engine/Enums.hpp"
+#include "../../Utils/Types.hpp"
 
 class Animation;
 

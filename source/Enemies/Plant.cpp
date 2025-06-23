@@ -1,7 +1,7 @@
-#include "../Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Plant.hpp"
-#include "../Player.hpp"
-#include "../World.hpp"
+#include "../GameFeatures/Level/Player.hpp"
+#include "../GameFeatures/World.hpp"
 
 Plant::Plant( Direction orientation ) :
 	orientation(orientation)

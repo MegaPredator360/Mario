@@ -1,7 +1,7 @@
 #ifndef DAMAGEBLOCK_HPP
 #define DAMAGEBLOCK_HPP
 
-#include "../Tile.hpp"
+#include "../Engine/Tile.hpp"
 
 /**
  * A block that causes damage to the Player on collision.

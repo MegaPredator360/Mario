@@ -1,7 +1,7 @@
 #ifndef FIREBALL_HPP
 #define FIREBALL_HPP
 
-#include "Sprite.hpp"
+#include "../GameFeatures/Sprite.hpp"
 
 class Player;
 

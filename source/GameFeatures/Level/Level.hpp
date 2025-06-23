@@ -5,8 +5,8 @@
 #include <set>
 #include <vector>
 
-#include "EntityTypes.hpp"
-#include "Location.hpp"
+#include "../../Engine/EntityTypes.hpp"
+#include "../WorldMap/Location.hpp"
 
 class Background;
 class LevelTheme;

@@ -1,7 +1,7 @@
 #ifndef HAMMERBRO_HPP
 #define HAMMERBRO_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 /**
  * An enemy that jumps and throws hammers at the player.

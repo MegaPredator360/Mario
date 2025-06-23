@@ -1,7 +1,7 @@
 #ifndef STAR_HPP
 #define STAR_HPP
 
-#include "../Item.hpp"
+#include "../GameFeatures/Level/Item.hpp"
 
 /**
  * An invincibility star.

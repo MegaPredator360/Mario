@@ -1,7 +1,7 @@
 #ifndef ITEM_HPP
 #define ITEM_HPP
 
-#include "Sprite.hpp"
+#include "../Sprite.hpp"
 
 /**
  * An item/power-up usable by the Player.

@@ -1,6 +1,6 @@
 #include "Bullet.hpp"
-#include "../Particle.hpp"
-#include "../World.hpp"
+#include "../Sprites/Particle.hpp"
+#include "../GameFeatures/World.hpp"
 
 Bullet::Bullet()
 {

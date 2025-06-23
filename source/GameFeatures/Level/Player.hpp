@@ -2,9 +2,9 @@
 #define PLAYER_HPP
 
 #include "Camera.hpp"
-#include "InputManager.hpp"
-#include "Location.hpp"
-#include "Sprite.hpp"
+#include "../../Utils/InputManager.hpp"
+#include "../WorldMap/Location.hpp"
+#include "../Sprite.hpp"
 
 class Item;
 

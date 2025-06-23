@@ -1,7 +1,7 @@
 #ifndef ENEMY_HPP
 #define ENEMY_HPP
 
-#include "Sprite.hpp"
+#include "../Sprite.hpp"
 
 static constexpr double BUMP_VELOCITY = 10.0; /**< The initial y velocity of a bumped enemy. */
 

@@ -1,7 +1,7 @@
 #include "GrowingLadder.hpp"
-#include "Ladder.hpp"
-#include "Tile.hpp"
-#include "World.hpp"
+#include "../Blocks/Ladder.hpp"
+#include "../Engine/Tile.hpp"
+#include "../GameFeatures/World.hpp"
 
 GrowingLadder::GrowingLadder()
 {

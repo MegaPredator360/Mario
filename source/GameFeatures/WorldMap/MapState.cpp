@@ -2,14 +2,14 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_opengl.h>
 
-#include "BitmapFont.hpp"
-#include "Game.hpp"
-#include "Globals.hpp"
+#include "../../Utils/BitmapFont.hpp"
+#include "../../Engine/Game.hpp"
+#include "../../Utils/Globals.hpp"
 #include "Map.hpp"
 #include "MapState.hpp"
-#include "Rendering.hpp"
-#include "TransitionState.hpp"
-#include "World.hpp"
+#include "../../Engine/Rendering.hpp"
+#include "../../Engine/TransitionState.hpp"
+#include "../World.hpp"
 
 MapState::MapState() :
 	GameState(true),

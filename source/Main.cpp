@@ -7,11 +7,11 @@
 #include <SDL2/SDL_mixer.h>
 #include <SDL2/SDL_opengl.h>
 
-#include "Exception.hpp"
-#include "Game.hpp"
-#include "Globals.hpp"
-#include "IniFile.hpp"
-#include "LoadingState.hpp"
+#include "Utils/Exception.hpp"
+#include "Engine/Game.hpp"
+#include "Utils/Globals.hpp"
+#include "Utils/IniFile.hpp"
+#include "Utils/LoadingState.hpp"
 
 //=====================================================================
 // Initialization routines

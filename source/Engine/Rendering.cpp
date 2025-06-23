@@ -1,6 +1,6 @@
 #include <SDL2/SDL_opengl.h>
 
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "Rendering.hpp"
 
 void renderClampView( double& viewX, double& viewY, double viewWidth, double viewHeight, int width, int height )

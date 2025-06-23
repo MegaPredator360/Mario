@@ -1,7 +1,7 @@
 #ifndef MUSHROOM_HPP
 #define MUSHROOM_HPP
 
-#include "../Item.hpp"
+#include "../GameFeatures/Level/Item.hpp"
 
 /**
  * Types of mushroom items.

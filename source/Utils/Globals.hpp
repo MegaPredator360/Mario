@@ -6,11 +6,11 @@
 #ifndef GLOBALS_HPP
 #define GLOBALS_HPP
 
-#include "FpsManager.hpp"
+#include "../Engine/FpsManager.hpp"
 #include "InputManager.hpp"
-#include "GameSession.hpp"
+#include "../Engine/GameSession.hpp"
 #include "Logger.hpp"
-#include "ResourceManager.hpp"
+#include "../Engine/ResourceManager.hpp"
 #include "Settings.hpp"
 #include "Singleton.hpp"
 

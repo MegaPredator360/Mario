@@ -1,7 +1,7 @@
 #ifndef INFINITYSTATE_HPP
 #define INFINITYSTATE_HPP
 
-#include "GameState.hpp"
+#include "../Engine/GameState.hpp"
 
 /**
  * The game state that manages infinity mode.

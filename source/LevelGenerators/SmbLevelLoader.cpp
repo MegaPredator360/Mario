@@ -2,7 +2,7 @@
 
 #include <boost/algorithm/string.hpp>
 
-#include "../Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "SmbLevelLoader.hpp"
 
 Level* SmbLevelLoader::generateLevel( int seed ) const

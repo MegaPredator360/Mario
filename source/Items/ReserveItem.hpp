@@ -1,7 +1,7 @@
 #ifndef RESERVEITEM_HPP
 #define RESERVEITEM_HPP
 
-#include "Item.hpp"
+#include "../GameFeatures/Level/Item.hpp"
 
 /**
  * A reserve item dropped from the box on the top of the screen.

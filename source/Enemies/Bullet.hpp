@@ -1,7 +1,7 @@
 #ifndef BULLET_HPP
 #define BULLET_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 /**
  * A Bullet launched from a Blaster.

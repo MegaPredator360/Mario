@@ -1,9 +1,9 @@
 #ifndef PIPE_HPP
 #define PIPE_HPP
 
-#include "../Enums.hpp"
-#include "../Location.hpp"
-#include "../Tile.hpp"
+#include "../Engine/Enums.hpp"
+#include "../GameFeatures/WorldMap/Location.hpp"
+#include "../Engine/Tile.hpp"
 
 /**
  * A warp pipe.

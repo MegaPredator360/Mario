@@ -1,7 +1,7 @@
 #ifndef LOADINGSTATE_HPP
 #define LOADINGSTATE_HPP
 
-#include "GameState.hpp"
+#include "../Engine/GameState.hpp"
 #include "Logger.hpp"
 
 /**

@@ -1,6 +1,6 @@
-#include "Player.hpp"
+#include "Level/Player.hpp"
 #include "Sprite.hpp"
-#include "Tile.hpp"
+#include "../Engine/Tile.hpp"
 #include "World.hpp"
 
 Sprite::Sprite() :

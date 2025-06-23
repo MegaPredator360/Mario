@@ -1,4 +1,4 @@
-#include "Globals.hpp"
+#include "../../Utils/Globals.hpp"
 #include "LevelTheme.hpp"
 
 void LevelTheme::addEntityType( const std::string& name, const ResourceManager* resourceGroup )

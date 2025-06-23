@@ -3,9 +3,9 @@
 
 #include <string>
 
-#include "Animation.hpp"
+#include "../GameFeatures/Animation.hpp"
 #include "Enums.hpp"
-#include "Vector2.hpp"
+#include "../Utils/Vector2.hpp"
 
 class ResourceManager;
 class World;

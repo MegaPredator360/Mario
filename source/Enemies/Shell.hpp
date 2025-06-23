@@ -1,7 +1,7 @@
 #ifndef SHELL_HPP
 #define SHELL_HPP
 
-#include "../Enemy.hpp"
+#include "../GameFeatures/Level/Enemy.hpp"
 
 class Player;
 

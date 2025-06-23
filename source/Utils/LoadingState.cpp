@@ -1,22 +1,22 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 
-#include "Game.hpp"
+#include "../Engine/Game.hpp"
 #include "Globals.hpp"
-#include "InfinityState.hpp"
+#include "../GameFeatures/InfinityState.hpp"
 #include "LoadingState.hpp"
-#include "MapState.hpp"
-#include "Player.hpp"
-#include "Rendering.hpp"
+#include "../GameFeatures/WorldMap/MapState.hpp"
+#include "../GameFeatures/Level/Player.hpp"
+#include "../Engine/Rendering.hpp"
 #include "Text.hpp"
-#include "World.hpp"
+#include "../GameFeatures/World.hpp"
 
-#include "Episode.hpp"
-#include "LevelGenerators/HillyLevelGenerator.hpp"
-#include "LevelGenerators/SimpleLevelGenerator.hpp"
-#include "LevelGenerators/SmbLevelLoader.hpp"
-#include "LevelGenerators/TestLevelGenerator.hpp"
-#include "LevelTheme.hpp"
+#include "../GameFeatures/Episode.hpp"
+#include "../LevelGenerators/HillyLevelGenerator.hpp"
+#include "../LevelGenerators/SimpleLevelGenerator.hpp"
+#include "../LevelGenerators/SmbLevelLoader.hpp"
+#include "../LevelGenerators/TestLevelGenerator.hpp"
+#include "../GameFeatures/Level/LevelTheme.hpp"
 
 void LoadingState::onLog( const std::string& text )
 {

@@ -1,7 +1,7 @@
 #ifndef GROWINGLADDER_HPP
 #define GROWINGLADDER_HPP
 
-#include "Sprite.hpp"
+#include "../GameFeatures/Sprite.hpp"
 
 /**
  * A sprite that grows a ladder upward until it hits a block or the bounds

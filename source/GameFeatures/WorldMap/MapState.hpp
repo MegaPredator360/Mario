@@ -1,7 +1,7 @@
 #ifndef MAPSTATE_HPP
 #define MAPSTATE_HPP
 
-#include "GameState.hpp"
+#include "../../Engine/GameState.hpp"
 
 class Map;
 class World;

@@ -1,7 +1,7 @@
 #ifndef TEXTURE_HPP
 #define TEXTURE_HPP
 
-#include "Image.hpp"
+#include "../Utils/Image.hpp"
 
 /**
  * A texture stored in graphics memory.

@@ -3,7 +3,7 @@
 #include <GL/gl.h>
 
 #include "Animation.hpp"
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 
 Animation::Animation() :
 	horizontalOrientation(false),

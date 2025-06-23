@@ -1,5 +1,5 @@
 #include "DamageBlock.hpp"
-#include "../Player.hpp"
+#include "../GameFeatures/Level/Player.hpp"
 
 DamageBlock::DamageBlock( bool fatal ) :
 	Tile(fatal ? TILE_NONE : TILE_SOLID),

@@ -1,7 +1,7 @@
 #ifndef LEAF_HPP
 #define LEAF_HPP
 
-#include "../Item.hpp"
+#include "../GameFeatures/Level/Item.hpp"
 
 /**
  * A super leaf that gives the player a tail.

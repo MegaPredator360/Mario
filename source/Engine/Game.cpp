@@ -1,6 +1,6 @@
 #include "Game.hpp"
 #include "GameState.hpp"
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 
 Game::Game( GameState* initialState ) :
 	frameCount(0)

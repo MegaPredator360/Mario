@@ -3,7 +3,7 @@
 
 #include <string>
 
-#include "Vector2.hpp"
+#include "../Utils/Vector2.hpp"
 
 /**
  * A cardinal direction.

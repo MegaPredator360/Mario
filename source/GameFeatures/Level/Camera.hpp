@@ -1,7 +1,7 @@
 #ifndef CAMERA_HPP
 #define CAMERA_HPP
 
-#include "Vector2.hpp"
+#include "../../Utils/Vector2.hpp"
 
 /**
  * Handles player camera movement.

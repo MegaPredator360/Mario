@@ -1,8 +1,8 @@
-#include "Globals.hpp"
+#include "../Utils/Globals.hpp"
 #include "LevelEnd.hpp"
 #include "Particle.hpp"
-#include "Random.hpp"
-#include "World.hpp"
+#include "../Utils/Random.hpp"
+#include "../GameFeatures/World.hpp"
 
 LevelEnd::LevelEnd()
 {

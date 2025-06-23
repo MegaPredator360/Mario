@@ -1,7 +1,7 @@
 #ifndef HILLYLEVELGENERATOR_HPP
 #define HILLYLEVELGENERATOR_HPP
 
-#include "../LevelGenerator.hpp"
+#include "../Utils/LevelGenerator.hpp"
 
 /**
  * Generates hilly levels.

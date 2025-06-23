@@ -1,6 +1,6 @@
 #include "Entity.hpp"
-#include "Globals.hpp"
-#include "World.hpp"
+#include "../Utils/Globals.hpp"
+#include "../GameFeatures/World.hpp"
 
 Entity::Entity() :
 	layer(0),
