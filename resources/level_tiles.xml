@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<resources>
+
+    <!-- Files -->
+    <animation id="smb3_grass_tiles">
+        <frame image="graphics/level_tiles/smb3_grass_tiles.png" w="16" h="16" x_stride="0"
+            y_stride="0" />
+    </animation>
+
+    <animation id="smb3_common_tiles">
+        <frame image="graphics/level_tiles/smb3_common_tiles.png" w="16" h="16" x_stride="0"
+            y_stride="0" />
+    </animation>
+
+    <animation id="smb3_water_tiles">
+        <frame image="graphics/level_tiles/smb3_water_tiles_1.png" w="16" h="16" x_stride="0"
+            y_stride="0" />
+    </animation>
+
+    <!-- Blocks -->
+    <animation id="brick">
+        <frame animation="smb3_common_tiles" index="B" time="10" />
+        <frame animation="smb3_common_tiles" index="C" />
+        <frame animation="smb3_common_tiles" index="D" />
+        <frame animation="smb3_common_tiles" index="E" />
+    </animation>
+
+    <animation id="question_block">
+        <frame animation="smb3_common_tiles" index="0" time="10" />
+        <frame animation="smb3_common_tiles" index="1" />
+        <frame animation="smb3_common_tiles" index="2" />
+        <frame animation="smb3_common_tiles" index="3" />
+    </animation>
+
+    <animation id="block_dead">
+        <frame animation="smb3_common_tiles" index="4" />
+    </animation>
+
+    <animation id="cement_block">
+        <frame image="graphics/level_tiles/smb3_common_tiles.png" x="128" y="0" w="16" h="16" />
+    </animation>
+
+    <animation id="coin">
+        <frame image="graphics/level_tiles/smb3_common_tiles.png" x="0" y="48" w="16" h="16"
+            time="8" />
+        <frame x="16" y="48" w="16" h="16" />
+        <frame x="32" y="48" w="16" h="16" />
+        <frame x="48" y="48" w="16" h="16" />
+    </animation>
+
+    <animation id="level_end_block">
+        <frame image="graphics/level_tiles/smb3_common_tiles.png" x="160" w="16" h="16" />
+    </animation>
+
+    <!-- Pipe Tileset -->
+    <animation id="pipe_h_green_nw">
+        <frame animation="smb3_common_tiles" index="25" />
+    </animation>
+
+    <animation id="pipe_h_green_sw">
+        <frame animation="smb3_common_tiles" index="30" />
+    </animation>
+
+    <animation id="pipe_h_green_ne">
+        <frame animation="smb3_common_tiles" index="25" mirror_x="1" />
+    </animation>
+
+    <animation id="pipe_h_green_se">
+        <frame animation="smb3_common_tiles" index="30" mirror_x="1" />
+    </animation>
+
+    <animation id="pipe_h_green_n">
+        <frame animation="smb3_common_tiles" index="26" />
+    </animation>
+
+    <animation id="pipe_h_green_s">
+        <frame animation="smb3_common_tiles" index="31" />
+    </animation>
+
+    <animation id="pipe_v_green_sw">
+        <frame animation="smb3_common_tiles" index="F" mirror_y="1" />
+    </animation>
+
+    <animation id="pipe_v_green_se">
+        <frame animation="smb3_common_tiles" index="10" mirror_y="1" />
+    </animation>
+
+    <animation id="pipe_v_green_nw">
+        <frame animation="smb3_common_tiles" index="F" />
+    </animation>
+
+    <animation id="pipe_v_green_ne">
+        <frame animation="smb3_common_tiles" index="10" />
+    </animation>
+
+    <animation id="pipe_v_green_w">
+        <frame animation="smb3_common_tiles" index="1A" />
+    </animation>
+
+    <animation id="pipe_v_green_e">
+        <frame animation="smb3_common_tiles" index="1B" />
+    </animation>
+
+    <group id="pipe_down_green_tileset">
+        <resource key="tile_sw" value="pipe_v_green_sw" />
+        <resource key="tile_se" value="pipe_v_green_se" />
+        <resource key="tile_w" value="pipe_v_green_w" />
+        <resource key="tile_e" value="pipe_v_green_e" />
+    </group>
+
+    <group id="pipe_left_green_tileset">
+        <resource key="tile_nw" value="pipe_h_green_nw" />
+        <resource key="tile_sw" value="pipe_h_green_sw" />
+        <resource key="tile_n" value="pipe_h_green_n" />
+        <resource key="tile_s" value="pipe_h_green_s" />
+    </group>
+
+    <group id="pipe_right_green_tileset">
+        <resource key="tile_ne" value="pipe_h_green_ne" />
+        <resource key="tile_se" value="pipe_h_green_se" />
+        <resource key="tile_n" value="pipe_h_green_n" />
+        <resource key="tile_s" value="pipe_h_green_s" />
+    </group>
+
+    <group id="pipe_up_green_tileset">
+        <resource key="tile_nw" value="pipe_v_green_nw" />
+        <resource key="tile_ne" value="pipe_v_green_ne" />
+        <resource key="tile_w" value="pipe_v_green_w" />
+        <resource key="tile_e" value="pipe_v_green_e" />
+    </group>
+
+    <!-- Water Tileset -->
+    <animation id="water">
+        <frame animation="smb3_water_tiles" index="4" />
+    </animation>
+
+    <animation id="water_surface">
+        <frame animation="smb3_water_tiles" index="0" time="10" />
+        <frame animation="smb3_water_tiles" index="1" />
+        <frame animation="smb3_water_tiles" index="2" />
+        <frame animation="smb3_water_tiles" index="3" />
+    </animation>
+
+    <group id="water_tileset">
+        <resource key="tile_n" value="water_surface" />
+        <resource key="tile" animation="smb3_water_tiles" index="4" />
+    </group>
+
+    <!-- Grassland Tilesets -->
+    <group id="grass_tileset">
+        <resource key="tile_nw" animation="smb3_grass_tiles" index="0" />
+        <resource key="tile_n" animation="smb3_grass_tiles" index="1" />
+        <resource key="tile_ne" animation="smb3_grass_tiles" index="2" />
+        <resource key="tile_w" animation="smb3_grass_tiles" index="C" />
+        <resource key="tile" animation="smb3_grass_tiles" index="D" />
+        <resource key="tile_e" animation="smb3_grass_tiles" index="E" />
+        <resource key="tile_sw" animation="smb3_grass_tiles" index="18" />
+        <resource key="tile_s" animation="smb3_grass_tiles" index="19" />
+        <resource key="tile_se" animation="smb3_grass_tiles" index="1A" />
+        <resource key="tile_corner_nw" animation="smb3_grass_tiles" index="9" />
+        <resource key="tile_corner_ne" animation="smb3_grass_tiles" index="A" />
+        <resource key="tile_slope_up" animation="smb3_grass_tiles" index="3" />
+        <resource key="tile_slope_down" animation="smb3_grass_tiles" index="4" />
+        <resource key="tile_slope_up_left" animation="smb3_grass_tiles" index="5" />
+        <resource key="tile_slope_up_right" animation="smb3_grass_tiles" index="6" />
+        <resource key="tile_slope_down_left" animation="smb3_grass_tiles" index="7" />
+        <resource key="tile_slope_down_right" animation="smb3_grass_tiles" index="8" />
+    </group>
+
+</resources>

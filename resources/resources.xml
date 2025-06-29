@@ -10,6 +10,24 @@
 <!-- HUD Elements -->
 <import file="hud_elements.xml" />
 
+<!-- Effects -->
+<import file="effects.xml" />
+
+<!-- Level tilesets -->
+<import file="level_tiles.xml" />
+
+<!-- Level Backgrounds -->
+<import file="backgrounds.xml" />
+
+<!-- Enemies -->
+<import file="enemies.xml" />
+
+<!-- Items / Powerups -->
+<import file="items.xml" />
+
+<!-- Mario Frames -->
+<import file="mario.xml" />
+
 <!-- Fonts -->
 <font id="font_main" file="graphics/font/smb3_font.png" width="8" height="8" >
 	<char id="A" x="0" y="16" number="15" />
@@ -38,33 +56,6 @@
 	<frame image="graphics/smb3_tiles.png" w="16" h="16" x_stride="1" y_stride="1" />
 </animation>
 
-<animation id="smb3_grass_tiles">
-	<frame image="graphics/level_tiles/smb3_grass_tiles.png" w="16" h="16" x_stride="0" y_stride="0" />
-</animation>
-
-<animation id="smb3_common_tiles">
-	<frame image="graphics/level_tiles/smb3_common_tiles.png" w="16" h="16" x_stride="0" y_stride="0" />
-</animation>
-
-<!-- Animations -->
-<animation id="brick">
-	<frame animation="smb3_tiles" index="1d" time="10" />
-	<frame animation="smb3_tiles" index="1e" />
-	<frame animation="smb3_tiles" index="1f" />
-	<frame animation="smb3_tiles" index="20" />
-</animation>
-
-<animation id="question_block">
-	<frame animation="smb3_common_tiles" index="0" time="10" />
-	<frame animation="smb3_common_tiles" index="1" />
-	<frame animation="smb3_common_tiles" index="2" />
-	<frame animation="smb3_common_tiles" index="3" />
-</animation>
-
-<animation id="block_dead">
-	<frame animation="smb3_common_tiles" index="4" />
-</animation>
-
 <animation id="wood_block">
 	<frame animation="smb3_tiles" index="24" />
 </animation>
@@ -78,40 +69,6 @@
 	<frame animation="smb3_tiles" index="1e5" />
 	<frame animation="smb3_tiles" index="1e6" />
 	<frame animation="smb3_tiles" index="1e7" />
-</animation>
-
-<animation id="coin">
-	<frame image="graphics/smb3_coin.png" w="6" h="16" time="8" />
-	<frame x="6" w="10" />
-	<frame x="16" w="14" />
-	<frame x="30" w="10" />
-</animation>
-
-<import file="mario.xml" />
-
-<animation id="goomba">
-	<frame image="graphics/smb3_enemies.png" x="15" y="4" w="16" h="16" time="8"/>
-	<frame x="65" y="4" />
-</animation>
-
-<animation id="goomba_dead">
-	<frame image="graphics/smb3_enemies.png" x="315" y="7" w="16" h="9" />
-</animation>
-
-<animation id="koopa">
-	<frame image="graphics/smb3_enemies.png" x="125" y="98" w="16" h="27" time="8" />
-	<frame x="165" y="99" h="26" />
-</animation>
-
-<animation id="shell">
-	<frame id="shell" image="graphics/smb3_enemies.png" x="50" y="104" w="16" h="16" />
-</animation>
-
-<animation id="shell_spinning">
-	<frame id="shell" time="2" />
-	<frame x="15" y="104" />
-	<frame y="129" />
-	<frame y="154" />
 </animation>
 
 <animation id="smb3_plant_vertical">
@@ -209,36 +166,6 @@
 	<frame x="65" />
 </animation>
 
-<animation id="mushroom">
-	<frame image="graphics/smb3_items.png" x="45" w="16" h="16" />
-</animation>
-
-<animation id="flower">
-	<frame image="graphics/smb3_items.png" x="90" w="16" h="16" />
-</animation>
-
-<animation id="fireball">
-	<frame image="graphics/smb3_enemies.png" x="114" y="657" w="8" h="8" time="4" />
-	<frame x="134" y="658" />
-	<frame x="154" y="657" />
-	<frame x="174" y="658" />
-</animation>
-
-<animation id="star">
-	<frame image="graphics/smb3_items.png" x="270" w="16" h="16" time="4" />
-	<frame x="315" />
-	<frame x="360" />
-	<frame x="405" />
-</animation>
-
-<animation id="leaf">
-	<frame image="graphics/smb3_items.png" x="135" w="15" h="16" />
-</animation>
-
-<animation id="smb3_mushroom_1up">
-	<frame image="graphics/level_tiles/smb3_items.png" x="144" w="16" h="16" />
-</animation>
-
 <animation id="bush">
 	<frame image="graphics/smb3_tiles.png" x="119" w="16" h="16" />
 </animation>
@@ -253,57 +180,6 @@
 <animation id="smb3_plant_head">
 	<frame image="graphics/smb3_enemies.png" x="115" y="504" w="16" h="16" time="5" />
 	<frame x="165" />
-</animation>
-
-<animation id="brick_particle">
-	<frame image="graphics/smb3_brick_particle.png" w="8" h="8" time="8" />
-	<frame x="8" />
-</animation>
-
-<animation id="coin_particle">
-	<frame image="graphics/smb3_coin_particle.png" x="4" y="1" w="8" h="14" time="2" />
-	<frame x="6" y="17" w="4" />
-	<frame x="8" y="33" w="1" />
-	<frame x="6" y="49" w="4" />
-</animation>
-
-<animation id="coin_explosion">
-	<frame image="graphics/smb3_coin_particle.png" y="64" w="16" h="16" time="6" />
-	<frame y="80" />
-	<frame y="96" />
-</animation>
-
-<animation id="coin_sparkle">
-	<frame image="graphics/smb3_coin_sparkle.png" y="10" w="5" h="5" time="4" />
-	<frame y="5" />
-	<frame y="0" />
-	<frame y="5" />
-	<frame y="10" />
-</animation>
-
-<animation id="fireball_smoke">
-	<frame image="graphics/smb3_effects.png" y="43" w="16" h="16" time="4" />
-	<frame x="17" />
-	<frame x="34" />
-	<frame x="51" />
-</animation>
-
-<animation id="hit">
-	<frame image="graphics/smb3_effects.png" y="26" w="16" h="16" time ="4" />
-	<frame x="17" />
-	<frame x="34" />
-	<frame x="51" />
-</animation>
-
-<animation id="slide_smoke">
-	<frame image="graphics/effects/smb3_effects.png" y="16" w="8" h="8" time="4" />
-	<frame x="8" />
-	<frame x="16" />
-	<frame x="24" />
-</animation>
-
-<animation id="level_end_block">
-	<frame image="graphics/smb3_items.png" w="16" h="16" />
 </animation>
 
 <!-- Map movement animations -->
@@ -536,54 +412,6 @@
 	<frame animation="smb3_tiles" index="9a" />
 </animation>
 
-<animation id="pipe_h_green_nw">
-	<frame animation="smb3_tiles" index="92" />
-</animation>
-
-<animation id="pipe_h_green_sw">
-	<frame animation="smb3_tiles" index="ae" />
-</animation>
-
-<animation id="pipe_h_green_ne">
-	<frame animation="smb3_tiles" index="92" mirror_x="1" />
-</animation>
-
-<animation id="pipe_h_green_se">
-	<frame animation="smb3_tiles" index="ae" mirror_x="1" />
-</animation>
-
-<animation id="pipe_h_green_n">
-	<frame animation="smb3_tiles" index="93" />
-</animation>
-
-<animation id="pipe_h_green_s">
-	<frame animation="smb3_tiles" index="af" />
-</animation>
-
-<animation id="pipe_v_green_sw">
-	<frame animation="smb3_tiles" index="90" mirror_y="1" />
-</animation>
-
-<animation id="pipe_v_green_se">
-	<frame animation="smb3_tiles" index="91" mirror_y="1" />
-</animation>
-
-<animation id="pipe_v_green_nw">
-	<frame animation="smb3_tiles" index="90" />
-</animation>
-
-<animation id="pipe_v_green_ne">
-	<frame animation="smb3_tiles" index="91" />
-</animation>
-
-<animation id="pipe_v_green_w">
-	<frame animation="smb3_tiles" index="ac" />
-</animation>
-
-<animation id="pipe_v_green_e">
-	<frame animation="smb3_tiles" index="ad" />
-</animation>
-
 <animation id="snowy_ground_w">
 	<frame animation="smb3_tiles" index="110" />
 </animation>
@@ -620,17 +448,6 @@
 	<frame animation="smb3_tiles" index="215" />
 </animation>
 
-<animation id="water">
-	<frame animation="smb3_tiles" index="1d2" />
-</animation>
-
-<animation id="water_surface">
-	<frame animation="smb3_tiles" index="70" time="10" />
-	<frame animation="smb3_tiles" index="71" />
-	<frame animation="smb3_tiles" index="72" />
-	<frame animation="smb3_tiles" index="73" />
-</animation>
-
 <animation id="wooden_ground_nw">
 	<frame animation="smb3_tiles" index="4" />
 </animation>
@@ -665,10 +482,6 @@
 	<frame image="graphics/backgrounds/smb3_night_hills_2.png" />
 	<frame image="graphics/backgrounds/smb3_night_hills_3.png" />
 	<frame index="1" />
-</background>
-
-<background id="hills_bg" tiling="horizontal">
-	<frame image="graphics/backgrounds/smb3_hills.png" />
 </background>
 
 <background id="pipes_bg" tiling="all" time="10">
@@ -738,11 +551,12 @@
 	
 	<!-- Fonts -->
 	<resource key="font_main" value="font_main" />
-	<resource key="font_hud_counter" value="font_hud_counter" />
 	<resource key="font_bold" value="font_bold" />
+	<resource key="font_hud_counter" value="font_hud_counter" />
 	
 	<!-- Animations -->
 	<resource key="brick" value="brick" />
+	<resource key="cement_block" value="cement_block" />
 	<resource key="question_block" value="question_block" />
 	<resource key="block_dead" value="block_dead" />
 	<resource key="coin" value="coin" />
@@ -874,6 +688,8 @@
 	<resource key="hit" value="hit" />
 	<resource key="slide_smoke" value="slide_smoke" />
 	<resource key="level_end_block" value="level_end_block" />
+
+	<!-- HUD Elements -->
 	<resource key="mario_indicator" value="mario_indicator" />
 	<resource key="times" value ="times" />
 	<resource key="time_indicator" value="time_indicator" />
@@ -892,6 +708,7 @@
 	<resource key="score_4000" value="score_4000" />
 	<resource key="score_8000" value="score_8000" />
 	<resource key="score_1up" value="score_1up" />
+
 	<resource key="map_mario" value="map_mario" />
 	<resource key="map_mario_climb" value="map_mario_climb" />
 	<resource key="map_mario_swim_down" value="map_mario_swim_down" />
@@ -916,26 +733,6 @@
 </group>
 
 <!-- Groups representing multi-tile level objects -->
-<group id="grass_tileset">
-	<resource key="tile_nw" animation="smb3_grass_tiles" index="0" />
-	<resource key="tile_n" animation="smb3_grass_tiles" index="1" />
-	<resource key="tile_ne" animation="smb3_grass_tiles" index="2" />
-	<resource key="tile_w" animation="smb3_grass_tiles" index="2f" />
-	<resource key="tile" animation="smb3_grass_tiles" index="30" />
-	<resource key="tile_e" animation="smb3_grass_tiles" index="31" />
-	<resource key="tile_sw" animation="smb3_grass_tiles" index="4b" />
-	<resource key="tile_s" animation="smb3_grass_tiles" index="4c" />
-	<resource key="tile_se" animation="smb3_grass_tiles" index="4d" />
-	<resource key="tile_corner_nw" animation="smb3_grass_tiles" index="11" />
-	<resource key="tile_corner_ne" animation="smb3_grass_tiles" index="15" />
-	<resource key="tile_slope_up" animation="smb3_grass_tiles" index="10" />
-	<resource key="tile_slope_down" animation="smb3_grass_tiles" index="16" />
-	<resource key="tile_slope_up_left" animation="smb3_grass_tiles" index="2d" />
-	<resource key="tile_slope_up_right" animation="smb3_grass_tiles" index="2e" />
-	<resource key="tile_slope_down_left" animation="smb3_grass_tiles" index="32" />
-	<resource key="tile_slope_down_right" animation="smb3_grass_tiles" index="33" />
-</group>
-
 <group id="dead_grass_tileset">
 	<resource key="tile_nw" animation="smb3_tiles" index="9d" />
 	<resource key="tile_n" animation="smb3_tiles" index="9e" />
@@ -1045,34 +842,6 @@
 	<resource key="tile_se" value="metal_box_white_se" />
 </group>
 
-<group id="pipe_down_green_tileset">
-	<resource key="tile_sw" value="pipe_v_green_sw" />
-	<resource key="tile_se" value="pipe_v_green_se" />
-	<resource key="tile_w" value="pipe_v_green_w" />
-	<resource key="tile_e" value="pipe_v_green_e" />
-</group>
-
-<group id="pipe_left_green_tileset">
-	<resource key="tile_nw" value="pipe_h_green_nw" />
-	<resource key="tile_sw" value="pipe_h_green_sw" />
-	<resource key="tile_n" value="pipe_h_green_n" />
-	<resource key="tile_s" value="pipe_h_green_s" />
-</group>
-
-<group id="pipe_right_green_tileset">
-	<resource key="tile_ne" value="pipe_h_green_ne" />
-	<resource key="tile_se" value="pipe_h_green_se" />
-	<resource key="tile_n" value="pipe_h_green_n" />
-	<resource key="tile_s" value="pipe_h_green_s" />
-</group>
-
-<group id="pipe_up_green_tileset">
-	<resource key="tile_nw" value="pipe_v_green_nw" />
-	<resource key="tile_ne" value="pipe_v_green_ne" />
-	<resource key="tile_w" value="pipe_v_green_w" />
-	<resource key="tile_e" value="pipe_v_green_e" />
-</group>
-
 <group id="snowy_ground_tileset">
 	<resource key="tile_w" value="snowy_ground_w" />
 	<resource key="tile" value="snowy_ground" />
@@ -1086,11 +855,6 @@
 	<resource key="tile_w" value="snowy_ledge_w" />
 	<resource key="tile" value="snowy_ledge" />
 	<resource key="tile_e" value="snowy_ledge_e" />
-</group>
-
-<group id="water_tileset">
-	<resource key="tile_n" value="water_surface" />
-	<resource key="tile" animation="smb3_tiles" index="1d2" />
 </group>
 
 <group id="wood_block_tileset">

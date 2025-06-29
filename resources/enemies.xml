@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<resources>
+
+    <animation id="goomba">
+        <frame image="graphics/enemies/goomba.png" x="0" y="0" w="16" h="16" time="8" />
+        <frame x="16" y="0" />
+    </animation>
+
+    <animation id="goomba_dead">
+        <frame image="graphics/enemies/goomba.png" x="32" y="0" w="16" h="16" />
+    </animation>
+
+    <animation id="koopa">
+        <frame image="graphics/enemies/koopa_troopa_green.png" x="0" y="0" w="16" h="27" time="8" />
+        <frame x="16" y="0" w="16" h="27" />
+    </animation>
+
+    <animation id="shell">
+        <frame id="shell" image="graphics/enemies/koopa_troopa_green.png" x="32" y="11" w="16" h="16" />
+    </animation>
+
+    <animation id="shell_spinning">
+        <frame id="shell" time="2" />
+        <frame x="32" y="11" />
+        <frame x="48" y="11" />
+        <frame x="64" y="11" />
+    </animation>
+
+</resources>

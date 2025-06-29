@@ -2,10 +2,11 @@
 <resources>
     <sound id="1up" file="sounds/smb3_extra_life.wav" />
     <sound id="blast" file="sounds/smb3_blast.wav" />
-    <sound id="bump" file="sounds/smb3_bump.wav" />
+    <sound id="bump" file="sounds/smb3_hit_block.wav" />
     <sound id="brick_break" file="sounds/smb3_brick_break.wav" />
-    <sound id="coin_get" file="sounds/smb3_coin.wav" />
-    <sound id="count" file="sounds/smb3_count.wav" />
+    <sound id="coin_get" file="sounds/smb3_coin_collect.wav" />
+    <sound id="count" file="sounds/smb3_score.wav" />
+    <sound id="count_end" file="sounds/smb3_score_end.wav" /> <!-- Not referenced -->
     <sound id="hit_1" file="sounds/smb3_hit_combo_1.wav" />
     <sound id="hit_2" file="sounds/smb3_hit_combo_2.wav" />
     <sound id="hit_3" file="sounds/smb3_hit_combo_3.wav" />
@@ -13,19 +14,20 @@
     <sound id="hit_5" file="sounds/smb3_hit_combo_5.wav" />
     <sound id="hit_6" file="sounds/smb3_hit_combo_6.wav" />
     <sound id="hit_7" file="sounds/smb3_hit_combo_7.wav" />
-    <sound id="hit_8" file="sounds/smb3_hit_combo_8.wav" />
+    <sound id="hit_8" file="sounds/smb3_hit_combo_8.wav" /> <!-- Not referenced -->
     <sound id="jump" file="sounds/smb3_jump.wav" />
     <sound id="kick" file="sounds/smb3_kick.wav" />
     <sound id="level_enter" file="sounds/smb3_level_enter.wav" />
     <sound id="map_move" file="sounds/smb3_map_move.wav" />
     <sound id="map_reveal" file="sounds/smw_map_reveal.wav" />
-    <sound id="powerdown" file="sounds/smb3_powerdown.wav" />
-    <sound id="powerup" file="sounds/smb3_powerup.wav" />
+    <sound id="powerdown" file="sounds/smb3_powerdown_warp.wav" />
+    <sound id="powerup" file="sounds/smb3_player_powerup.wav" />
     <sound id="reserve_item" file="sounds/smw_reserve_item.wav" />
     <sound id="reserve_item_drop" file="sounds/smw_reserve_item_drop.wav" />
-    <sound id="spin" file="sounds/smb3_spin.wav" />
+    <sound id="spin" file="sounds/smw_spin-jump.wav" />
     <sound id="sprout" file="sounds/smb3_block_item_appear.wav" />
     <sound id="stomp" file="sounds/smb3_stomp.wav" />
     <sound id="swim" file="sounds/smb3_swim.wav" />
-    <sound id="throw" file="sounds/smb3_throw.wav" />
+    <sound id="throw" file="sounds/smb3_throw_fireball.wav" />
+    <sound id="p-meter_full" file="sounds/smb3_p-meter_full.wav" /> <!-- Not referenced -->
 </resources>

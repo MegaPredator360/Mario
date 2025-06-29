@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<resources>
+
+    <animation id="fireball">
+        <frame image="graphics/effects/fireball.png" x="0" y="0" w="8" h="9" time="4" />
+        <frame x="8" y="0" />
+        <frame x="16" y="0" />
+        <frame x="24" y="0" />
+    </animation>
+
+    <animation id="fireball_smoke">
+        <frame image="graphics/effects/fireball_smoke.png" w="16" h="16" time="4" />
+        <frame x="16" />
+        <frame x="32" />
+        <frame x="48" />
+    </animation>
+
+    <animation id="hit">
+        <frame image="graphics/effects/hit_effect.png" w="16" h="16" time="4" />
+        <frame x="16" />
+        <frame x="32" />
+        <frame x="48" />
+    </animation>
+
+    <animation id="slide_smoke">
+        <frame image="graphics/effects/slide_smoke.png" w="8" h="8" time="4" />
+        <frame x="8" />
+        <frame x="16" />
+        <frame x="24" />
+    </animation>
+
+    <animation id="brick_particle">
+        <frame image="graphics/effects/smb3_brick_particles.png" w="8" h="8" time="8" />
+        <frame x="8" />
+        <frame x="16" />
+        <frame x="24" />
+    </animation>
+
+    <animation id="coin_particle">
+        <frame image="graphics/effects/coin_sprite.png" x="0" y="0" w="8" h="16" time="2" />
+        <frame x="8" y="0" w="8" />
+        <frame x="16" y="0" w="8" />
+        <frame x="24" y="0" w="8" />
+    </animation>
+
+    <animation id="coin_explosion">
+        <frame image="graphics/effects/coin_explosion.png" x="0" y="0" w="16" h="16" time="6" />
+        <frame x="16" />
+        <frame x="32" />
+    </animation>
+
+    <animation id="coin_sparkle">
+        <frame image="graphics/effects/sparkle_1.png" y="0" x="16" w="8" h="8" time="4" />
+        <frame x="8" />
+        <frame x="0" />
+        <frame x="8" />
+        <frame x="16" />
+    </animation>
+
+</resources>

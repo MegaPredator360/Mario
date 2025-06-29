@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<resources>
+
+    <background id="hills_bg" tiling="horizontal">
+        <frame image="graphics/backgrounds/smb3_hills.png" />
+    </background>
+
+
+</resources>
