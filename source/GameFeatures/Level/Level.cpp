@@ -59,6 +59,7 @@ Level::Level(int width, int height) :
 
 	ignoreTiles.insert(TYPE_BLASTER);
 	ignoreTiles.insert(TYPE_BRICK);
+	ignoreTiles.insert(TYPE_CEMENT_BLOCK);
 	ignoreTiles.insert(TYPE_DAMAGE_BLOCK);
 	ignoreTiles.insert(TYPE_DAMAGE_BLOCK_FATAL);
 	ignoreTiles.insert(TYPE_LADDER);
@@ -269,6 +270,9 @@ Tile* Level::createTile( int id ) const
 				tile = new Block( blockType );
 			}
 		}
+		break;
+	case TYPE_CEMENT_BLOCK:
+		tile = new Tile(TILE_SOLID, false);
 		break;
 	case TYPE_DAMAGE_BLOCK:
 		tile = new DamageBlock(false);
