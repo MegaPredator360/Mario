@@ -1,12 +1,12 @@
-# Ignorar carpetas
+# Ignore folders
 obj/*
 bin/*
 .vscode/*
 
-resources/*.mp3
-resources/*.wav
-resources/*.png
-resources/smb3_bg/
+# Resource Files
+resources/music/
+resources/sounds/
+resources/graphics/
 Mario
 log.txt
 *.pro.user
