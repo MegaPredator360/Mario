@@ -23,8 +23,9 @@ enum BlockContents
  */
 enum BlockType
 {
-	BLOCK_BRICK,   /**< A block made of bricks. */
-	BLOCK_QUESTION /**< A question block. */
+	BLOCK_BRICK,   	/**< A block made of bricks. */
+	BLOCK_QUESTION, /**< A question block. */
+	BLOCK_CEMENT	/**< A cement block. */
 };
 
 /**

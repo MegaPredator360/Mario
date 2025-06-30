@@ -159,6 +159,13 @@ void Block::bump( bool strongBump, bool fromPlayer, Player* bumper )
 		return;
 	}
 
+	// Cement Block Bump
+	if ( type == BLOCK_CEMENT )
+	{
+		playSound("bump");
+		return;
+	}
+
 	// Bump sprites that are above
 	const std::set<Sprite*>* sprites = getWorld().getSprites(getXInt(), getYInt() + getHeightInt());
 	if( sprites != nullptr )
@@ -348,6 +355,10 @@ void Block::init()
 
 		case BLOCK_QUESTION:
 			mainAnimation = getAnimation("question_block");
+			break;
+
+		case BLOCK_CEMENT:
+			mainAnimation = getAnimation("cement_block");
 			break;
 	}
 
