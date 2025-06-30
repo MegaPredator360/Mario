@@ -37,7 +37,7 @@
     </animation>
 
     <animation id="cement_block">
-        <frame image="graphics/level_tiles/smb3_common_tiles.png" x="128" y="0" w="16" h="16" />
+        <frame animation="smb3_common_tiles" index="8" />
     </animation>
 
     <animation id="coin">
